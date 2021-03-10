@@ -1,3 +1,13 @@
+/* Czcionki
+
+font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+
 html{
   height: auto;
   width: auto;
@@ -34,35 +44,64 @@ div {
 }
 
 
-/* animowana linia */
-
-.outer {
-  position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 10000;
-    top: 50%;
-    left: 50%;
-    bottom: 50%;
-    right: 50%;
-}
-
-.container{
-  display: block;
+/* animowana linia logo */
+.row {
   position: relative;
+  border: 3px solid #000;
+  display: flex;
+  height: 33vh;
+
 }
+
+.col {
+  position: relative;
+  display: flex;
+  border: 3px solid #000;
+  width: 33vw;
+  text-align: center;
+  align-items: center;
+  justify-content: center
+}
+
+.svg{
+  margin-left: -45px;
+  margin-top: -20px;
+  transform: scale(0.72);
+  z-index: 1001;
+}
+
+.logo{
+    background: transparent;
+    background-size: contain;
+    animation: animate 10s ease-in;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes animate {
+    0%    {background: url('png/0.png'); background-size: contain; background-repeat: no-repeat;}
+    10%   {background: url('png/1.png'); background-size: contain; background-repeat: no-repeat;}
+    20%  {background: url('png/1.png'), url('png/2.png'); background-size: contain; background-repeat: no-repeat;}
+    30%  {background: url('png/1.png'), url('png/2.png'), url('png/3.png'); background-size: contain; background-repeat: no-repeat;}
+    40%  {background: url('png/1.png'), url('png/2.png'), url('png/3.png'), url('png/5.png'); background-size: contain; background-repeat: no-repeat;}
+    50% {background: url('png/1.png'), url('png/2.png'), url('png/3.png'), url('png/4.png'), url('png/5.png'), url('png/6.png'); background-size: contain; background-repeat: no-repeat;}
+    100% {background: url('png/1.png'), url('png/2.png'), url('png/3.png'), url('png/4.png'), url('png/5.png'), url('png/6.png'); background-size: contain; background-repeat: no-repeat;}
+}
+
 
 #logo-draw,
 #script {
 fill:none;
-stroke:#000;
+stroke:#1d1c1a;
 stroke-miterlimit:10;
 stroke-width:2px;
 }
 
 .animated-line {
 stroke-dasharray: 1200;
-animation: line 150s ease-in;}
+animation: line 150s ease-in;
+}
 
 #script {
 stroke-width:3px;
@@ -85,3 +124,5 @@ stroke-width:3px;
   opacity: 100;
 }
 }
+
+/*animowana linia logo koniec */
