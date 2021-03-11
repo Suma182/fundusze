@@ -40,23 +40,20 @@ div {
   height: 200px;
   background: radial-gradient(circle,#0f4bc7 0,#003096 100%);
   bottom:0;
-
 }
+
 
 
 /* animowana linia logo */
 .row {
   position: relative;
-  border: 3px solid #000;
   display: flex;
   height: 33vh;
-
 }
 
 .col {
   position: relative;
   display: flex;
-  border: 3px solid #000;
   width: 33vw;
   text-align: center;
   align-items: center;
@@ -74,7 +71,7 @@ div {
     background: transparent;
     background-size: contain;
     animation: animate 10s ease-in;
-    animation-delay: 3s;
+    animation-delay: 4s;
     animation-fill-mode: forwards;
 
 }
