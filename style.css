@@ -14,6 +14,7 @@ html{
 }
 
 body {
+  overflow: hidden;
 background: white;
 border-top-color: navy;
 padding:0;
@@ -25,26 +26,39 @@ div {
   display: block;
 }
 
+/*animacja górny i dolny pasek*/
 
 .top {
   position: absolute;
   width: 100%;
   top: 0;
-  height: 200px;
+  height: 300px;
   background: radial-gradient(circle,#0f4bc7 0,#003096 100%);
-}
+  z-index: 1;
+  animation: topp 1s ease-in-out;
+  animation-delay: 8s;
+  animation-fill-mode: forwards; }
+
+  @keyframes topp {
+      from  {height: 300px;}
+      to   {height: 80px;}
+  }
+
 
 .bottom {
   position: absolute;
   width: 100%;
-  height: 200px;
+  height: 300px;
   background: radial-gradient(circle,#0f4bc7 0,#003096 100%);
   bottom:0;
-}
+  animation: topp 0.5s ease-out;
+  animation-delay: 8.5s;
+  animation-fill-mode: forwards; }
+
+/*animacja górny i dolny pasek koniec*/
 
 
-
-/* animowana linia logo */
+/* animowana linia + logo */
 .row {
   position: relative;
   display: flex;
@@ -54,23 +68,50 @@ div {
 .col {
   position: relative;
   display: flex;
-  width: 33vw;
+  width: 10vw;
   text-align: center;
   align-items: center;
   justify-content: center
 }
 
-.svg{
-  margin-left: -45px;
-  margin-top: -20px;
-  transform: scale(0.72);
-  z-index: 1001;
+.col-middle {
+
+  position: absolute;
+  display: flex;
+  width: 100%;
+  top: 45%;
+  left: 45%;
+  transform: scale(1.5);
+  z-index: 2;
+  animation: left-top 1s ease-in-out;
+  animation-delay: 8s;
+  animation-fill-mode: forwards; }
+
+  @keyframes left-top {
+      from  {top:45%; left:45%; transform: scale(1.5);}
+      to   {top:-1%; left:-23%; transform: scale(0.5); filter: invert(1);}
 }
+
+
+.svg{
+  margin-right: -79px;
+  margin-top: -52px;
+  transform: scale(0.62);
+  animation: svg 1s ease-out;
+  animation-delay: 9s;
+  animation-fill-mode: forwards; }
+
+  @keyframes svg {
+      from  {opacity: 1;}
+      to   {opacity: 0;}
+}
+
+
 
 .logo{
     background: transparent;
     background-size: contain;
-    animation: animate 10s ease-in;
+    animation: animate 5s ease-in;
     animation-delay: 4s;
     animation-fill-mode: forwards;
 
@@ -78,13 +119,13 @@ div {
 
 @keyframes animate {
     0%    {background: url('png/0.png'); background-size: contain; background-repeat: no-repeat;}
-    10%   {background: url('png/1.png'); background-size: contain; background-repeat: no-repeat;}
-    20%  {background: url('png/1.png'), url('png/2.png'); background-size: contain; background-repeat: no-repeat;}
-    30%  {background: url('png/1.png'), url('png/2.png'), url('png/3.png'); background-size: contain; background-repeat: no-repeat;}
-    40%  {background: url('png/1.png'), url('png/2.png'), url('png/3.png'), url('png/5.png'); background-size: contain; background-repeat: no-repeat;}
-    50% {background: url('png/1.png'), url('png/2.png'), url('png/3.png'), url('png/4.png'), url('png/5.png'), url('png/6.png'); background-size: contain; background-repeat: no-repeat;}
-    90% {background: url('png/1.png'), url('png/2.png'), url('png/3.png'), url('png/4.png'), url('png/5.png'), url('png/6.png'); background-size: contain; background-repeat: no-repeat;}
-    100% {background: url('png/7.png'), transform: scale(0.25), left:0, top:0;}
+    20%   {background: url('png/1.png'); background-size: contain; background-repeat: no-repeat;}
+    35%  {background: url('png/1.png'), url('png/2.png'); background-size: contain; background-repeat: no-repeat;}
+    50%  {background: url('png/1.png'), url('png/2.png'), url('png/3.png'); background-size: contain; background-repeat: no-repeat;}
+    65%  {background: url('png/1.png'), url('png/2.png'), url('png/3.png'), url('png/5.png'); background-size: contain; background-repeat: no-repeat;}
+    80% {background: url('png/1.png'), url('png/2.png'), url('png/3.png'), url('png/4.png'), url('png/5.png'), url('png/6.png'); background-size: contain; background-repeat: no-repeat;}
+    95% {background: url('png/1.png'), url('png/2.png'), url('png/3.png'), url('png/4.png'), url('png/5.png'), url('png/6.png'); background-size: contain; background-repeat: no-repeat;}
+    100% {background: url('png/7.png'); background-size: contain; background-repeat: no-repeat;}
 }
 
 
@@ -98,7 +139,7 @@ stroke-width:2px;
 
 .animated-line {
 stroke-dasharray: 1200;
-animation: line 150s ease-in;
+animation: line 150s ease-in-out;
 }
 
 #script {
@@ -123,4 +164,4 @@ stroke-width:3px;
 }
 }
 
-/*animowana linia logo koniec */
+/*animowana linia + logo koniec */
