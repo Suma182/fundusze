@@ -83,7 +83,8 @@ div {
     30%  {background: url('png/1.png'), url('png/2.png'), url('png/3.png'); background-size: contain; background-repeat: no-repeat;}
     40%  {background: url('png/1.png'), url('png/2.png'), url('png/3.png'), url('png/5.png'); background-size: contain; background-repeat: no-repeat;}
     50% {background: url('png/1.png'), url('png/2.png'), url('png/3.png'), url('png/4.png'), url('png/5.png'), url('png/6.png'); background-size: contain; background-repeat: no-repeat;}
-    100% {background: url('png/1.png'), url('png/2.png'), url('png/3.png'), url('png/4.png'), url('png/5.png'), url('png/6.png'); background-size: contain; background-repeat: no-repeat;}
+    90% {background: url('png/1.png'), url('png/2.png'), url('png/3.png'), url('png/4.png'), url('png/5.png'), url('png/6.png'); background-size: contain; background-repeat: no-repeat;}
+    100% {background: url('png/7.png'), transform: scale(0.25), left:0, top:0;}
 }
 
 
