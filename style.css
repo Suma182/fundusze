@@ -363,8 +363,6 @@ position: absolute;
 }
 
 
-
-
 .circle-chart__circle1 {
   animation: circle-chart-fill 2s 6s reverse;
   transform: rotate(-90deg);
