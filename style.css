@@ -6,6 +6,22 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Roboto', sans-serif;
 
 */
+fade-in-left{
+  opacity: 0;
+  animation: fade-in-left 2s ease-in-out;
+
+}
+@keyframes fade-in-left {
+   0% {
+      opacity: 0;
+      transform: translateY(-10px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
 
 
 html{
@@ -15,7 +31,7 @@ html{
 }
 
 body {
-  overflow-x: hidden;
+overflow-x: hidden;
 background: white;
 border-top-color: navy;
 padding:0;
@@ -194,3 +210,176 @@ stroke-width:3px;
 }
 
 /*animowana linia + logo koniec */
+
+
+
+/* animowany wykres słupkowy "poziom wsparcia" */
+.bar-graph .year {
+  animation: fade-in-text 2.2s 5s forwards;
+}
+
+.bar-graph-vertical {
+  margin-top: 80px;
+  max-width: 680px;
+}
+
+.bar-graph-vertical .bar-container {
+  float: left;
+  height: 150px;
+  margin-right: 8px;
+  position: relative;
+  text-align: center;
+  width: 40px;
+}
+
+.bar-one {
+  z-index: 5;
+}
+
+.bar-two {
+  margin-left: -48px;
+position: absolute;
+  z-index: 3;
+}
+
+.bar-three {
+  z-index: 5;
+}
+
+.bar-four {
+  margin-left: -48px;
+position: absolute;
+  z-index: 3;
+}
+
+.bar-graph-vertical .bar {
+  border-radius: 3px;
+  bottom: 40px;
+  position: absolute;
+  width: 40px;
+}
+
+
+.bar-graph-vertical .year {
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  transform: rotate(90deg);
+}
+
+.bar-graph-two .bar::after {
+  animation: fade-in-text 2.2s 5s forwards;
+  color: #fff;
+  content: attr(data-percentage);
+  font-weight: 700;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 24px;
+
+  transform: rotate(90deg);
+}
+
+.bar-graph-two .bar-one .bar {
+  background-color: #000;
+  animation: show-bar-one-vertical 1.2s 5s forwards;
+}
+
+.bar-graph-two .bar-two .bar {
+  background-color: #efefef;
+  animation: show-bar-two-vertical 1.2s 5s forwards;
+}
+
+.bar-graph-two .bar-three .bar {
+  background-color: #407286;
+  animation: show-bar-three-vertical 1.2s 5s forwards;
+}
+
+.bar-graph-two .bar-four .bar {
+  background-color: #2e515f;
+  animation: show-bar-four-vertical 1.2s 5s forwards;
+}
+
+/* Bar Graph Vertical Animations */
+@-webkit-keyframes show-bar-one-vertical {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 40%;
+  }
+}
+
+@-webkit-keyframes show-bar-two-vertical {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@-webkit-keyframes show-bar-three-vertical {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 68%;
+  }
+}
+
+@-webkit-keyframes show-bar-four-vertical {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 82%;
+  }
+}
+
+@-webkit-keyframes fade-in-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+/* animowany wykres słupkowy "poziom wsparcia" KONIEC */
+
+
+/* animowany wykres kołowy */
+
+.circle-chart__circle2 {
+  animation: circle-chart-fill 2s 5s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+
+
+
+.circle-chart__circle1 {
+  animation: circle-chart-fill 2s 6s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.circle-chart__circle0 {
+  animation: circle-chart-fill 2s 7s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+
+@keyframes circle-chart-fill {
+  to { stroke-dasharray: 0 100;}
+}
+
+/* animowany wykres kołowy KONIEC */
