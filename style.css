@@ -356,21 +356,84 @@ position: absolute;
 
 /* animowany wykres kołowy */
 
-.circle-chart__circle2 {
+.circle-chart_bulgaria {
   animation: circle-chart-fill 2s 5s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
 }
 
 
-.circle-chart__circle1 {
+.circle-chart_chorwacja {
   animation: circle-chart-fill 2s 6s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
 }
 
-.circle-chart__circle0 {
+.circle-chart_cypr {
   animation: circle-chart-fill 2s 7s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.circle-chart_czechy {
+  animation: circle-chart-fill 2s 8s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.circle-chart_estonia {
+  animation: circle-chart-fill 2s 9s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.circle-chart_grecja {
+  animation: circle-chart-fill 2s 10s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.circle-chart_wegry {
+  animation: circle-chart-fill 2s 11s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.circle-chart_lotwa {
+  animation: circle-chart-fill 2s 12s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.circle-chart_litwa {
+  animation: circle-chart-fill 2s 13s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.circle-chart_malta {
+  animation: circle-chart-fill 2s 14s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.circle-chart_polska {
+  animation: circle-chart-fill 2s 15s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.circle-chart_portugalia {
+  animation: circle-chart-fill 2s 16s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.circle-chart_rumunia {
+  animation: circle-chart-fill 2s 17s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.circle-chart_slowacja {
+  animation: circle-chart-fill 2s 18s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.circle-chart_slowenia {
+  animation: circle-chart-fill 2s 19s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
 }
