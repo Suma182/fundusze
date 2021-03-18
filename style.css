@@ -355,85 +355,97 @@ position: absolute;
 
 
 /* animowany wykres kołowy */
+.tekst_w_kole {
+  color:Gray;
+  font-family: Roboto;
+  text-anchor: middle;
+  text-align: center;
+
+}
+
+.circle-chart {
+  display: block
+  margin: auto
+}
 
 .circle-chart_bulgaria {
-  animation: circle-chart-fill 2s 5s reverse;
+  animation: circle-chart-fill 1s 5s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
 }
 
 
 .circle-chart_chorwacja {
-  animation: circle-chart-fill 2s 6s reverse;
+  animation: circle-chart-fill 1s 5.5s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
 }
 
 .circle-chart_cypr {
-  animation: circle-chart-fill 2s 7s reverse;
+  animation: circle-chart-fill 1s 6s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
 }
 
 .circle-chart_czechy {
-  animation: circle-chart-fill 2s 8s reverse;
+  animation: circle-chart-fill 1s 6.5s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
 }
 
 .circle-chart_estonia {
-  animation: circle-chart-fill 2s 9s reverse;
+  animation: circle-chart-fill 1s 7s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
 }
 
 .circle-chart_grecja {
-  animation: circle-chart-fill 2s 10s reverse;
+  animation: circle-chart-fill 1s 7.5s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
 }
 .circle-chart_wegry {
-  animation: circle-chart-fill 2s 11s reverse;
+  animation: circle-chart-fill 1s 8s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
 }
 .circle-chart_lotwa {
-  animation: circle-chart-fill 2s 12s reverse;
+  animation: circle-chart-fill 1s 8.5s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
 }
 .circle-chart_litwa {
-  animation: circle-chart-fill 2s 13s reverse;
+  animation: circle-chart-fill 1s 9s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
 }
 .circle-chart_malta {
-  animation: circle-chart-fill 2s 14s reverse;
+  animation: circle-chart-fill 1s 9.5s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
 }
 .circle-chart_polska {
-  animation: circle-chart-fill 2s 15s reverse;
+  animation: circle-chart-fill 1s 10s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
 }
 .circle-chart_portugalia {
-  animation: circle-chart-fill 2s 16s reverse;
+  animation: circle-chart-fill 1s 10.5s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
 }
 .circle-chart_rumunia {
-  animation: circle-chart-fill 2s 17s reverse;
+  animation: circle-chart-fill 1s 11s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
 }
 .circle-chart_slowacja {
-  animation: circle-chart-fill 2s 18s reverse;
+  animation: circle-chart-fill 1s 11.5s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
 }
 .circle-chart_slowenia {
-  animation: circle-chart-fill 2s 19s reverse;
+  animation: circle-chart-fill 1s 12s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
 }
