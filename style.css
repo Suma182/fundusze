@@ -355,6 +355,7 @@ position: absolute;
 
 
 /* animowany wykres kołowy */
+<<<<<<< HEAD
 .tekst_w_kole {
   color:Gray;
   font-family: Roboto;
@@ -383,10 +384,40 @@ position: absolute;
 
 .circle-chart_cypr {
   animation: circle-chart-fill 1s 6s reverse;
-  transform: rotate(-90deg);
-  transform-origin: center;
+=======
+.tabela {
+  animation: tabela;
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  opacity: 0;}
+
+  @keyframes tabela {
+    to {opacity: 1;}
 }
 
+.circle-chart {
+  animation: circle-chart-fill, przezroczystosc;
+  animation-duration: 2s, 0.1s;
+>>>>>>> 1e8bdd35340709de3ab5f47b3548ab2887118cfa
+  transform: rotate(-90deg);
+  transform-origin: center;
+  animation-direction: reverse, normal;
+  animation-fill-mode: forwards, forwards;
+  animation-timing-function: ease-in, linear;
+  opacity: 0;}
+
+  @keyframes przezroczystosc {
+    to {opacity: 1;}
+  }
+
+
+.bulgaria {
+  animation-delay: 5s;
+}
+
+<<<<<<< HEAD
 .circle-chart_czechy {
   animation: circle-chart-fill 1s 6.5s reverse;
   transform: rotate(-90deg);
@@ -448,11 +479,66 @@ position: absolute;
   animation: circle-chart-fill 1s 12s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
+=======
+.chorwacja {
+  animation-delay: 6s;
 }
 
+.cypr {
+  animation-delay: 7s;
+}
+
+.czechy {
+  animation-delay: 8s;
+}
+
+.estonia {
+  animation-delay: 9s;
+}
+
+.grecja {
+  animation-delay: 10s;
+>>>>>>> 1e8bdd35340709de3ab5f47b3548ab2887118cfa
+}
+
+.wegry {
+  animation-delay: 11s;
+}
+
+.lotwa {
+  animation-delay: 12s;
+}
+
+.litwa {
+  animation-delay: 13s;
+}
+
+.malta {
+  animation-delay: 14s;
+}
+
+.polska {
+  animation-delay: 15s;
+}
+
+.portugalia {
+  animation-delay: 16s;
+}
+
+.rumunia {
+  animation-delay: 17s;;
+}
+
+.slowacja {
+  animation-delay: 18s;
+}
+
+.slowenia {
+  animation-delay: 19s;
+}
 
 @keyframes circle-chart-fill {
-  to { stroke-dasharray: 0 100;}
+  to {stroke-dasharray: 0 100;}
 }
 
 /* animowany wykres kołowy KONIEC */
