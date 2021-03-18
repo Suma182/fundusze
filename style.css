@@ -377,6 +377,10 @@ position: absolute;
 .circle-chart {
   animation: circle-chart-fill, przezroczystosc;
   animation-duration: 2s, 0.1s;
+<<<<<<< HEAD
+=======
+>>>>>>> 1e8bdd35340709de3ab5f47b3548ab2887118cfa
+>>>>>>> 02296fecd6df7119c24bef604e819f0e676919c8
 
 
 .circle-chart_bulgaria {
@@ -491,6 +495,10 @@ position: absolute;
 
   .grecja {
     animation-delay: 10s;
+<<<<<<< HEAD
+=======
+  >>>>>>> 1e8bdd35340709de3ab5f47b3548ab2887118cfa
+>>>>>>> 02296fecd6df7119c24bef604e819f0e676919c8
 }
 
 .wegry {
