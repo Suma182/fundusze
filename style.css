@@ -355,29 +355,182 @@ position: absolute;
 
 
 /* animowany wykres kołowy */
+.tekst_w_kole {
+  color:Gray;
+  font-family: Roboto;
+  text-anchor: middle;
+  text-align: center;
 
-.circle-chart__circle2 {
-  animation: circle-chart-fill 2s 5s reverse;
+}
+.tabela {
+  animation: tabela;
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  opacity: 0;}
+
+  @keyframes tabela {
+    to {opacity: 1;}
+}
+
+.circle-chart {
+  animation: circle-chart-fill, przezroczystosc;
+  animation-duration: 2s, 0.1s;
+
+
+.circle-chart_bulgaria {
+  animation: circle-chart-fill 1s 5s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
 }
 
 
-.circle-chart__circle1 {
-  animation: circle-chart-fill 2s 6s reverse;
+.circle-chart_chorwacja {
+  animation: circle-chart-fill 1s 5.5s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
 }
 
-.circle-chart__circle0 {
-  animation: circle-chart-fill 2s 7s reverse;
+.circle-chart_cypr {
+  animation: circle-chart-fill 1s 6s reverse;
+
+  transform: rotate(-90deg);
+  transform-origin: center;
+  animation-direction: reverse, normal;
+  animation-fill-mode: forwards, forwards;
+  animation-timing-function: ease-in, linear;
+  opacity: 0;}
+
+  @keyframes przezroczystosc {
+    to {opacity: 1;}
+  }
+
+
+.bulgaria {
+  animation-delay: 5s;
+}
+
+.circle-chart_czechy {
+  animation: circle-chart-fill 1s 6.5s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
 }
 
+.circle-chart_estonia {
+  animation: circle-chart-fill 1s 7s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.circle-chart_grecja {
+  animation: circle-chart-fill 1s 7.5s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.circle-chart_wegry {
+  animation: circle-chart-fill 1s 8s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.circle-chart_lotwa {
+  animation: circle-chart-fill 1s 8.5s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.circle-chart_litwa {
+  animation: circle-chart-fill 1s 9s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.circle-chart_malta {
+  animation: circle-chart-fill 1s 9.5s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.circle-chart_polska {
+  animation: circle-chart-fill 1s 10s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.circle-chart_portugalia {
+  animation: circle-chart-fill 1s 10.5s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.circle-chart_rumunia {
+  animation: circle-chart-fill 1s 11s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.circle-chart_slowacja {
+  animation: circle-chart-fill 1s 11.5s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+.circle-chart_slowenia {
+  animation: circle-chart-fill 1s 12s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+
+  .chorwacja {
+    animation-delay: 6s;
+  }
+
+  .cypr {
+    animation-delay: 7s;
+  }
+
+  .czechy {
+    animation-delay: 8s;
+  }
+
+  .estonia {
+    animation-delay: 9s;
+  }
+
+  .grecja {
+    animation-delay: 10s;
+}
+
+.wegry {
+  animation-delay: 11s;
+}
+
+.lotwa {
+  animation-delay: 12s;
+}
+
+.litwa {
+  animation-delay: 13s;
+}
+
+.malta {
+  animation-delay: 14s;
+}
+
+.polska {
+  animation-delay: 15s;
+}
+
+.portugalia {
+  animation-delay: 16s;
+}
+
+.rumunia {
+  animation-delay: 17s;;
+}
+
+.slowacja {
+  animation-delay: 18s;
+}
+
+.slowenia {
+  animation-delay: 19s;
+}
 
 @keyframes circle-chart-fill {
-  to { stroke-dasharray: 0 100;}
+  to {stroke-dasharray: 0 100;}
 }
 
 /* animowany wykres kołowy KONIEC */
