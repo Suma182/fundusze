@@ -355,7 +355,6 @@ position: absolute;
 
 
 /* animowany wykres kołowy */
-<<<<<<< HEAD
 .tekst_w_kole {
   color:Gray;
   font-family: Roboto;
@@ -363,28 +362,6 @@ position: absolute;
   text-align: center;
 
 }
-
-.circle-chart {
-  display: block
-  margin: auto
-}
-
-.circle-chart_bulgaria {
-  animation: circle-chart-fill 1s 5s reverse;
-  transform: rotate(-90deg);
-  transform-origin: center;
-}
-
-
-.circle-chart_chorwacja {
-  animation: circle-chart-fill 1s 5.5s reverse;
-  transform: rotate(-90deg);
-  transform-origin: center;
-}
-
-.circle-chart_cypr {
-  animation: circle-chart-fill 1s 6s reverse;
-=======
 .tabela {
   animation: tabela;
   animation-duration: 2s;
@@ -401,6 +378,24 @@ position: absolute;
   animation: circle-chart-fill, przezroczystosc;
   animation-duration: 2s, 0.1s;
 >>>>>>> 1e8bdd35340709de3ab5f47b3548ab2887118cfa
+
+
+.circle-chart_bulgaria {
+  animation: circle-chart-fill 1s 5s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+
+.circle-chart_chorwacja {
+  animation: circle-chart-fill 1s 5.5s reverse;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+.circle-chart_cypr {
+  animation: circle-chart-fill 1s 6s reverse;
+
   transform: rotate(-90deg);
   transform-origin: center;
   animation-direction: reverse, normal;
@@ -417,7 +412,6 @@ position: absolute;
   animation-delay: 5s;
 }
 
-<<<<<<< HEAD
 .circle-chart_czechy {
   animation: circle-chart-fill 1s 6.5s reverse;
   transform: rotate(-90deg);
@@ -479,26 +473,26 @@ position: absolute;
   animation: circle-chart-fill 1s 12s reverse;
   transform: rotate(-90deg);
   transform-origin: center;
-=======
-.chorwacja {
-  animation-delay: 6s;
-}
 
-.cypr {
-  animation-delay: 7s;
-}
+  .chorwacja {
+    animation-delay: 6s;
+  }
 
-.czechy {
-  animation-delay: 8s;
-}
+  .cypr {
+    animation-delay: 7s;
+  }
 
-.estonia {
-  animation-delay: 9s;
-}
+  .czechy {
+    animation-delay: 8s;
+  }
 
-.grecja {
-  animation-delay: 10s;
->>>>>>> 1e8bdd35340709de3ab5f47b3548ab2887118cfa
+  .estonia {
+    animation-delay: 9s;
+  }
+
+  .grecja {
+    animation-delay: 10s;
+  >>>>>>> 1e8bdd35340709de3ab5f47b3548ab2887118cfa
 }
 
 .wegry {
