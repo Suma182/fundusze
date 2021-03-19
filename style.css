@@ -225,8 +225,8 @@ stroke-width:3px;
 
 .bar-graph-vertical .bar-container {
   float: left;
-  height: 150px;
-  margin-right: 8px;
+  height: 350px;
+  margin-right: 45px;
   position: relative;
   text-align: center;
   width: 40px;
@@ -254,9 +254,9 @@ position: absolute;
 
 .bar-graph-vertical .bar {
   border-radius: 3px;
-  bottom: 40px;
+  bottom: 775px;
   position: absolute;
-  width: 40px;
+  width: 55px;
 }
 
 
@@ -279,29 +279,29 @@ position: absolute;
   position: absolute;
   right: 0;
   text-align: left;
-  top: 24px;
+  top: 56px;
 
   transform: rotate(90deg);
 }
 
 .bar-graph-two .bar-one .bar {
-  background-color: #000;
-  animation: show-bar-one-vertical 1.2s 5s forwards;
+  background-color: blue;
+  animation: show-bar-one-vertical 1.2s 4s forwards;
 }
 
 .bar-graph-two .bar-two .bar {
-  background-color: #efefef;
-  animation: show-bar-two-vertical 1.2s 5s forwards;
+  background-color: #4b5de3;
+  animation: show-bar-two-vertical 1.2s 4s forwards;
 }
 
 .bar-graph-two .bar-three .bar {
-  background-color: #407286;
-  animation: show-bar-three-vertical 1.2s 5s forwards;
+  background-color: blue;
+  animation: show-bar-three-vertical 1.2s 4s forwards;
 }
 
 .bar-graph-two .bar-four .bar {
-  background-color: #2e515f;
-  animation: show-bar-four-vertical 1.2s 5s forwards;
+  background-color: #4b5de3;
+  animation: show-bar-four-vertical 1.2s 4s forwards;
 }
 
 /* Bar Graph Vertical Animations */
@@ -310,7 +310,7 @@ position: absolute;
     height: 0;
   }
   100% {
-    height: 40%;
+    height: 85%;
   }
 }
 
@@ -328,7 +328,7 @@ position: absolute;
     height: 0;
   }
   100% {
-    height: 68%;
+    height: 90%;
   }
 }
 
@@ -337,7 +337,7 @@ position: absolute;
     height: 0;
   }
   100% {
-    height: 82%;
+    height: 100%;
   }
 }
 
