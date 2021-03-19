@@ -124,17 +124,17 @@ p{
   position: fixed;
   display: flex;
   width: 100%;
-  top: 45%;
-  left: 65%;
-  transform: scale(1.5);
+  top: 40%;
+  left: 25%;
+  zoom: 150%;
   z-index: 2;
-  animation: left-top 1s  linear;
+  animation: left-top 0.7s  ease-in-out;
   animation-delay: 8s;
   animation-fill-mode: forwards; }
 
   @keyframes left-top {
       from  {}
-      to   {transform: translateX(-85vw) translateY(-46vh) scale(0.5); filter: invert(1);}
+      to   {transform: translateX(-31vw) translateY(-29vh) scale(0.5); filter: invert(1);}
 }
 
 
