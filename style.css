@@ -124,17 +124,17 @@ p{
   position: fixed;
   display: flex;
   width: 100%;
-  top: 45%;
-  left: 65%;
-  transform: scale(1.5);
+  top: 40%;
+  left: 25%;
+  zoom: 150%;
   z-index: 2;
-  animation: left-top 1s  linear;
+  animation: left-top 0.7s  ease-in-out;
   animation-delay: 8s;
   animation-fill-mode: forwards; }
 
   @keyframes left-top {
       from  {}
-      to   {transform: translateX(-85vw) translateY(-46vh) scale(0.5); filter: invert(1);}
+      to   {transform: translateX(-31vw) translateY(-29vh) scale(0.5); filter: invert(1);}
 }
 
 
@@ -355,9 +355,16 @@ position: absolute;
 
 
 /* animowany wykres kołowy */
+.tekst_w_kole {
+  color:Gray;
+  font-family: Roboto;
+  text-anchor: middle;
+  text-align: center;
+
+}
 .tabela {
   animation: tabela;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-direction: normal;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
@@ -369,12 +376,12 @@ position: absolute;
 
 .circle-chart {
   animation: circle-chart-fill, przezroczystosc;
-  animation-duration: 2s, 0.1s;
-  transform: rotate(-90deg);
+  animation-duration: 1s, 0.1s;
+  transform: rotate(-45deg);
   transform-origin: center;
   animation-direction: reverse, normal;
   animation-fill-mode: forwards, forwards;
-  animation-timing-function: ease-in, linear;
+  animation-timing-function: ease, linear;
   opacity: 0;}
 
   @keyframes przezroczystosc {
@@ -386,24 +393,24 @@ position: absolute;
   animation-delay: 5s;
 }
 
-.chorwacja {
-  animation-delay: 6s;
-}
+  .chorwacja {
+    animation-delay: 6s;
+  }
 
-.cypr {
-  animation-delay: 7s;
-}
+  .cypr {
+    animation-delay: 7s;
+  }
 
-.czechy {
-  animation-delay: 8s;
-}
+  .czechy {
+    animation-delay: 8s;
+  }
 
-.estonia {
-  animation-delay: 9s;
-}
+  .estonia {
+    animation-delay: 9s;
+  }
 
-.grecja {
-  animation-delay: 10s;
+  .grecja {
+    animation-delay: 10s;
 }
 
 .wegry {
