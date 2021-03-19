@@ -237,7 +237,7 @@ stroke-width:3px;
 }
 
 .bar-two {
-  margin-left: -48px;
+  margin-left: -79px;
 position: absolute;
   z-index: 3;
 }
@@ -247,16 +247,16 @@ position: absolute;
 }
 
 .bar-four {
-  margin-left: -48px;
+  margin-left: -79px;
 position: absolute;
   z-index: 3;
 }
 
 .bar-graph-vertical .bar {
   border-radius: 3px;
-  bottom: 775px;
+  bottom: 675px;
   position: absolute;
-  width: 55px;
+  width: 50px;
 }
 
 
@@ -279,7 +279,7 @@ position: absolute;
   position: absolute;
   right: 0;
   text-align: left;
-  top: 56px;
+  top: 22px;
 
   transform: rotate(90deg);
 }
@@ -310,7 +310,7 @@ position: absolute;
     height: 0;
   }
   100% {
-    height: 85%;
+    height: 15%;
   }
 }
 
@@ -328,7 +328,7 @@ position: absolute;
     height: 0;
   }
   100% {
-    height: 90%;
+    height: 10%;
   }
 }
 
