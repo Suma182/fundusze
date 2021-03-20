@@ -358,8 +358,8 @@ position: absolute;
 .tekst_w_kole {
   color:Gray;
   font-family: Roboto;
-  text-anchor: middle;
   text-align: center;
+  top: 50%;
 
 }
 .tabela {
@@ -368,13 +368,20 @@ position: absolute;
   animation-direction: normal;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
-  opacity: 0;}
+  opacity: 0;
+  font-family: Roboto;
+  text-anchor: middle;
+  text-align: center;
+  font-size: 1.5vw;}
 
   @keyframes tabela {
     to {opacity: 1;}
 }
 
 .circle-chart {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   animation: circle-chart-fill, przezroczystosc;
   animation-duration: 1s, 0.1s;
   transform: rotate(-45deg);
@@ -453,4 +460,104 @@ position: absolute;
   to {stroke-dasharray: 0 100;}
 }
 
+
+
+.col-lr {
+  position: relative;
+  float: left;
+  width: 25vw;
+  border-color: #000;
+  border-style: solid;
+  text-align: left;
+
+}
+
+
+.col-chart {
+  display: table-cell;
+  vertical-align: middle;
+  height: 50vh;
+  line-height: 46vh;
+  position: relative;
+  float: left;
+  width: 45vw;
+  border-color: #000;
+  border-style: solid;
+ }
+
+ .row-chart {
+   position: absolute;
+ }
+
+
+
+
+
 /* animowany wykres kołowy KONIEC */
+
+
+/* animacja EOG */
+
+.labele .labelo .lableg{
+  text-align: center;
+
+}
+
+.labele{
+    animation: eoge 2s 2s ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 1;
+      display: inline-block;
+      position: absolute;
+      left: 47.5%;
+}
+
+@keyframes eoge {
+  25% {left: 25%;}
+  95% {left: 25%; opacity: 0;}
+  100% {opacity: 0;}
+}
+
+.labelo{
+    animation: eogo 2s 2s ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 1;
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+}
+
+@keyframes eogo {
+  25% {left: 45%;}
+  95% {left: 45%; opacity: 0;}
+  100% {opacity: 0;}
+}
+
+.labelg{
+    animation: eogg 2s 2s ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 1;
+      display: inline-block;
+      position: absolute;
+      left: 52.5%;
+}
+
+@keyframes eogg {
+  25% {left: 65%;}
+  95% {left: 65%; opacity: 0;}
+  100% {opacity: 0;}
+}
+
+.label2{
+    animation: eog2 4s 2s ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+      display: inline-block;
+}
+
+@keyframes eog2 {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/*animacja EOG koniec /*
