@@ -124,17 +124,17 @@ p{
   position: fixed;
   display: flex;
   width: 100%;
-  top: 45%;
-  left: 65%;
-  transform: scale(1.5);
+  top: 40%;
+  left: 25%;
+  zoom: 150%;
   z-index: 2;
-  animation: left-top 1s  linear;
+  animation: left-top 0.7s  ease-in-out;
   animation-delay: 8s;
   animation-fill-mode: forwards; }
 
   @keyframes left-top {
       from  {}
-      to   {transform: translateX(-85vw) translateY(-46vh) scale(0.5); filter: invert(1);}
+      to   {transform: translateX(-31vw) translateY(-29vh) scale(0.5); filter: invert(1);}
 }
 
 
@@ -211,25 +211,152 @@ stroke-width:3px;
 
 /*animowana linia + logo koniec */
 
+/*animacja fundusze*/
+
+.eea {
+  position: absolute;
+  left: 5vw;
+  bottom: 27vh;
+}
+
+.euro {
+  position: absolute;
+  left: 15vw;
+  bottom: 22vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  color: green;
+  animation: ojro 2s infinite forwards ease-in-out;
+
+}
+
+@keyframes ojro {
+  0% {opacity:0;}
+  50% {opacity:1;}
+  100% {opacity:0; left: 50vw;}
+}
+
+
+.star {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+
+  margin-left: .9em;
+  margin-right: .9em;
+  margin-bottom: 1.2em;
+
+  border-right:  .3em solid transparent;
+  border-bottom: .7em  solid #FC0;
+  border-left:   .3em solid transparent;
+
+  /* rozmiar gwiazdek */
+  font-size: 20px;}
+
+  .star:before, .star:after {
+    content: '';
+
+    display: block;
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: .6em;
+    left: -1em;
+
+    border-right:  1em solid transparent;
+    border-bottom: .7em  solid #FC0;
+    border-left:   1em solid transparent;
+
+    transform: rotate(-35deg);
+  }
+
+  .star:after {
+    transform: rotate(35deg);
+  }
+
+
+.star-position {
+  position: absolute;
+  right: 25vw;
+  bottom: 35vh;
+}
+
+/*animacja poszczególnych gwiazdek */
+.star1 {
+animation: star1-an 0.5s ease-out forwards;}
+
+@keyframes star1-an {
+to {transform: translateY(-100px);}
+}
+
+
+.star2 {
+animation: star2-an 0.5s ease-out forwards;
+}
+
+@keyframes star2-an {
+to {transform: translate(45px, -80px)}
+}
+
+.star3 {
+animation: star3-an 0.5s ease-out forwards;
+}
+
+@keyframes star3-an {
+to {transform: translate(80px, -45px)}
+}
+
+.star4 {
+animation: star4-an 0.5s ease-out forwards;
+}
+
+@keyframes star4-an {
+to {transform: translateX(100px);}
+}
+
+
+
+.star7 {
+animation: star7-an 0.5s ease-out forwards;
+}
+
+@keyframes star7-an {
+to {transform: translateY(100px);}
+}
+
+
+.star10 {
+animation: star10-an 0.5s ease-out forwards;
+}
+
+@keyframes star10-an {
+to {transform: translateX(-100px);}
+}
+
+
+/*animacja fundusze KONIEC*/
 
 
 /* animowany wykres słupkowy "poziom wsparcia" */
 .bar-graph .year {
-  animation: fade-in-text 2.2s 5s forwards;
+  animation: fade-in-text 2.2s 3s forwards;
 }
 
 .bar-graph-vertical {
   margin-top: 80px;
-  max-width: 680px;
+  max-width: 350px;
 }
 
 .bar-graph-vertical .bar-container {
   float: left;
-  height: 150px;
-  margin-right: 8px;
+  height: 350px;
+  margin-right: 50px;
   position: relative;
   text-align: center;
-  width: 40px;
+  width: 38px;
 }
 
 .bar-one {
@@ -237,7 +364,7 @@ stroke-width:3px;
 }
 
 .bar-two {
-  margin-left: -48px;
+  margin-left: -88px;
 position: absolute;
   z-index: 3;
 }
@@ -247,61 +374,60 @@ position: absolute;
 }
 
 .bar-four {
-  margin-left: -48px;
+  margin-left: -88px;
 position: absolute;
   z-index: 3;
 }
 
 .bar-graph-vertical .bar {
-  border-radius: 3px;
-  bottom: 40px;
+  border-radius: 2px;
+  bottom: 50px;
   position: absolute;
-  width: 40px;
+  width: 50px;
 }
 
 
 .bar-graph-vertical .year {
   bottom: 0;
   left: 0;
-  margin: 0 auto;
+  margin: 0;
   position: absolute;
   right: 0;
-  transform: rotate(90deg);
 }
 
 .bar-graph-two .bar::after {
-  animation: fade-in-text 2.2s 5s forwards;
+  animation: fade-in-text 2.2s 3s forwards;
   color: #fff;
   content: attr(data-percentage);
   font-weight: 700;
   left: 0;
   margin: 0 auto;
+  margin-top: -15px;
   position: absolute;
   right: 0;
-  text-align: left;
-  top: 24px;
-
-  transform: rotate(90deg);
+  text-align: center;
+  top: 22px;
+  font-family: 'Lato', sans-serif;
 }
 
 .bar-graph-two .bar-one .bar {
-  background-color: #000;
-  animation: show-bar-one-vertical 1.2s 5s forwards;
+  background-color: #4b5de3;
+  animation: show-bar-one-vertical 1.2s 3s forwards;
 }
 
 .bar-graph-two .bar-two .bar {
-  background-color: #efefef;
-  animation: show-bar-two-vertical 1.2s 5s forwards;
+  background-color: #ff3300;
+  animation: show-bar-two-vertical 2s 5s forwards;
 }
 
 .bar-graph-two .bar-three .bar {
-  background-color: #407286;
-  animation: show-bar-three-vertical 1.2s 5s forwards;
+  background-color: #4b5de3 ;
+  animation: show-bar-three-vertical 1.2s 8s forwards;
 }
 
 .bar-graph-two .bar-four .bar {
-  background-color: #2e515f;
-  animation: show-bar-four-vertical 1.2s 5s forwards;
+  background-color: #ff3300;
+  animation: show-bar-four-vertical 2s 10s forwards;
 }
 
 /* Bar Graph Vertical Animations */
@@ -310,7 +436,7 @@ position: absolute;
     height: 0;
   }
   100% {
-    height: 40%;
+    height: 85%;
   }
 }
 
@@ -328,7 +454,7 @@ position: absolute;
     height: 0;
   }
   100% {
-    height: 68%;
+    height: 90%;
   }
 }
 
@@ -337,7 +463,7 @@ position: absolute;
     height: 0;
   }
   100% {
-    height: 82%;
+    height: 100%;
   }
 }
 
@@ -355,29 +481,218 @@ position: absolute;
 
 
 /* animowany wykres kołowy */
+.tekst_w_kole {
+  color:Gray;
+  font-family: Roboto;
+  text-align: center;
+  top: 50%;
 
-.circle-chart__circle2 {
-  animation: circle-chart-fill 2s 5s reverse;
-  transform: rotate(-90deg);
-  transform-origin: center;
+}
+.tabela {
+  animation: tabela;
+  animation-duration: 3s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  opacity: 0;
+  font-family: Roboto;
+  text-anchor: middle;
+  text-align: center;
+  font-size: 2vh;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;}
+
+  @keyframes tabela {
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
-
-.circle-chart__circle1 {
-  animation: circle-chart-fill 2s 6s reverse;
-  transform: rotate(-90deg);
+.circle-chart {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  animation: circle-chart-fill, przezroczystosc;
+  animation-duration: 1s, 0.1s;
+  transform: rotate(-45deg);
   transform-origin: center;
+  animation-direction: reverse, normal;
+  animation-fill-mode: forwards, forwards;
+  animation-timing-function: ease, linear;
+  opacity: 0;}
+
+  @keyframes przezroczystosc {
+    to {opacity: 1;}
+  }
+
+
+.bulgaria {
+  animation-delay: 5s;
 }
 
-.circle-chart__circle0 {
-  animation: circle-chart-fill 2s 7s reverse;
-  transform: rotate(-90deg);
-  transform-origin: center;
+  .chorwacja {
+    animation-delay: 6s;
+  }
+
+  .cypr {
+    animation-delay: 7s;
+  }
+
+  .czechy {
+    animation-delay: 8s;
+  }
+
+  .estonia {
+    animation-delay: 9s;
+  }
+
+  .grecja {
+    animation-delay: 10s;
 }
 
+.wegry {
+  animation-delay: 11s;
+}
+
+.lotwa {
+  animation-delay: 12s;
+}
+
+.litwa {
+  animation-delay: 13s;
+}
+
+.malta {
+  animation-delay: 14s;
+}
+
+.polska {
+  animation-delay: 15s;
+}
+
+.portugalia {
+  animation-delay: 16s;
+}
+
+.rumunia {
+  animation-delay: 17s;;
+}
+
+.slowacja {
+  animation-delay: 18s;
+}
+
+.slowenia {
+  animation-delay: 19s;
+}
 
 @keyframes circle-chart-fill {
-  to { stroke-dasharray: 0 100;}
+  to {stroke-dasharray: 0 100;}
 }
 
+
+
+.col-lr {
+  position: relative;
+  float: left;
+  width: 25vw;
+  border-color: #000;
+  border-style: solid;
+  text-align: left;
+  height: 50vh;
+  vertical-align: middle;
+
+
+}
+
+
+.col-chart {
+  display: table-cell;
+  vertical-align: middle;
+  height: 50vh;
+  line-height: 46vh;
+  position: relative;
+  float: left;
+  width: 45vw;
+  border-color: #000;
+  border-style: solid;
+
+ }
+
+ .row-chart {
+   position: absolute;
+ }
+
+
+
+
+
 /* animowany wykres kołowy KONIEC */
+
+
+/* animacja EOG */
+
+.labele .labelo .lableg{
+  text-align: center;
+
+}
+
+.labele{
+    animation: eoge 2s 2s ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 1;
+      display: inline-block;
+      position: absolute;
+      left: 47.5%;
+}
+
+@keyframes eoge {
+  25% {left: 25%;}
+  95% {left: 25%; opacity: 0;}
+  100% {opacity: 0;}
+}
+
+.labelo{
+    animation: eogo 2s 2s ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 1;
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+}
+
+@keyframes eogo {
+  25% {left: 45%;}
+  95% {left: 45%; opacity: 0;}
+  100% {opacity: 0;}
+}
+
+.labelg{
+    animation: eogg 2s 2s ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 1;
+      display: inline-block;
+      position: absolute;
+      left: 52.5%;
+}
+
+@keyframes eogg {
+  25% {left: 65%;}
+  95% {left: 65%; opacity: 0;}
+  100% {opacity: 0;}
+}
+
+.label2{
+    animation: eog2 4s 2s ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+      display: inline-block;
+}
+
+@keyframes eog2 {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/*animacja EOG koniec /*
