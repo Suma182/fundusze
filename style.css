@@ -215,7 +215,7 @@ stroke-width:3px;
 
 /* animowany wykres słupkowy "poziom wsparcia" */
 .bar-graph .year {
-  animation: fade-in-text 2.2s 5s forwards;
+  animation: fade-in-text 2.2s 3s forwards;
 }
 
 .bar-graph-vertical {
@@ -226,10 +226,10 @@ stroke-width:3px;
 .bar-graph-vertical .bar-container {
   float: left;
   height: 350px;
-  margin-right: 45px;
+  margin-right: 50px;
   position: relative;
   text-align: center;
-  width: 40px;
+  width: 38px;
 }
 
 .bar-one {
@@ -237,7 +237,7 @@ stroke-width:3px;
 }
 
 .bar-two {
-  margin-left: -48px;
+  margin-left: -79px;
 position: absolute;
   z-index: 3;
 }
@@ -247,16 +247,16 @@ position: absolute;
 }
 
 .bar-four {
-  margin-left: -48px;
+  margin-left: -79px;
 position: absolute;
   z-index: 3;
 }
 
 .bar-graph-vertical .bar {
-  border-radius: 3px;
-  bottom: 775px;
+  border-radius: 2px;
+  bottom: 675px;
   position: absolute;
-  width: 55px;
+  width: 50px;
 }
 
 
@@ -266,11 +266,11 @@ position: absolute;
   margin: 0 auto;
   position: absolute;
   right: 0;
-  transform: rotate(90deg);
+  transform: rotate(0deg);
 }
 
 .bar-graph-two .bar::after {
-  animation: fade-in-text 2.2s 5s forwards;
+  animation: fade-in-text 2.2s 3s forwards;
   color: #fff;
   content: attr(data-percentage);
   font-weight: 700;
@@ -279,29 +279,29 @@ position: absolute;
   position: absolute;
   right: 0;
   text-align: left;
-  top: 56px;
+  top: 22px;
 
   transform: rotate(90deg);
 }
 
 .bar-graph-two .bar-one .bar {
-  background-color: blue;
-  animation: show-bar-one-vertical 1.2s 4s forwards;
+  background-color: #ff3300;
+  animation: show-bar-one-vertical 1.2s 3s forwards;
 }
 
 .bar-graph-two .bar-two .bar {
   background-color: #4b5de3;
-  animation: show-bar-two-vertical 1.2s 4s forwards;
+  animation: show-bar-two-vertical 1.2s 3s forwards;
 }
 
 .bar-graph-two .bar-three .bar {
-  background-color: blue;
-  animation: show-bar-three-vertical 1.2s 4s forwards;
+  background-color: #ff3300;
+  animation: show-bar-three-vertical 1.2s 3s forwards;
 }
 
 .bar-graph-two .bar-four .bar {
   background-color: #4b5de3;
-  animation: show-bar-four-vertical 1.2s 4s forwards;
+  animation: show-bar-four-vertical 1.2s 3s forwards;
 }
 
 /* Bar Graph Vertical Animations */
@@ -310,7 +310,7 @@ position: absolute;
     height: 0;
   }
   100% {
-    height: 85%;
+    height: 15%;
   }
 }
 
@@ -328,7 +328,7 @@ position: absolute;
     height: 0;
   }
   100% {
-    height: 90%;
+    height: 10%;
   }
 }
 
