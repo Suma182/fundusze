@@ -372,10 +372,15 @@ position: absolute;
   font-family: Roboto;
   text-anchor: middle;
   text-align: center;
-  font-size: 1.5vw;}
+  font-size: 2vh;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;}
 
   @keyframes tabela {
-    to {opacity: 1;}
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .circle-chart {
@@ -469,6 +474,9 @@ position: absolute;
   border-color: #000;
   border-style: solid;
   text-align: left;
+  height: 50vh;
+  vertical-align: middle;
+
 
 }
 
@@ -483,6 +491,7 @@ position: absolute;
   width: 45vw;
   border-color: #000;
   border-style: solid;
+
  }
 
  .row-chart {
