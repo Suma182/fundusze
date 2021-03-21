@@ -220,7 +220,7 @@ stroke-width:3px;
 
 .bar-graph-vertical {
   margin-top: 80px;
-  max-width: 680px;
+  max-width: 350px;
 }
 
 .bar-graph-vertical .bar-container {
@@ -237,7 +237,7 @@ stroke-width:3px;
 }
 
 .bar-two {
-  margin-left: -79px;
+  margin-left: -88px;
 position: absolute;
   z-index: 3;
 }
@@ -247,14 +247,14 @@ position: absolute;
 }
 
 .bar-four {
-  margin-left: -79px;
+  margin-left: -88px;
 position: absolute;
   z-index: 3;
 }
 
 .bar-graph-vertical .bar {
   border-radius: 2px;
-  bottom: 675px;
+  bottom: 50px;
   position: absolute;
   width: 50px;
 }
@@ -263,10 +263,9 @@ position: absolute;
 .bar-graph-vertical .year {
   bottom: 0;
   left: 0;
-  margin: 0 auto;
+  margin: 0;
   position: absolute;
   right: 0;
-  transform: rotate(0deg);
 }
 
 .bar-graph-two .bar::after {
@@ -276,32 +275,32 @@ position: absolute;
   font-weight: 700;
   left: 0;
   margin: 0 auto;
+  margin-top: -15px;
   position: absolute;
   right: 0;
-  text-align: left;
+  text-align: center;
   top: 22px;
-
-  transform: rotate(90deg);
+  font-family: 'Lato', sans-serif;
 }
 
 .bar-graph-two .bar-one .bar {
-  background-color: #ff3300;
+  background-color: #4b5de3;
   animation: show-bar-one-vertical 1.2s 3s forwards;
 }
 
 .bar-graph-two .bar-two .bar {
-  background-color: #4b5de3;
-  animation: show-bar-two-vertical 1.2s 3s forwards;
+  background-color: #ff3300;
+  animation: show-bar-two-vertical 2s 5s forwards;
 }
 
 .bar-graph-two .bar-three .bar {
-  background-color: #ff3300;
-  animation: show-bar-three-vertical 1.2s 3s forwards;
+  background-color: #4b5de3 ;
+  animation: show-bar-three-vertical 1.2s 8s forwards;
 }
 
 .bar-graph-two .bar-four .bar {
-  background-color: #4b5de3;
-  animation: show-bar-four-vertical 1.2s 3s forwards;
+  background-color: #ff3300;
+  animation: show-bar-four-vertical 2s 10s forwards;
 }
 
 /* Bar Graph Vertical Animations */
@@ -310,7 +309,7 @@ position: absolute;
     height: 0;
   }
   100% {
-    height: 15%;
+    height: 85%;
   }
 }
 
@@ -328,7 +327,7 @@ position: absolute;
     height: 0;
   }
   100% {
-    height: 10%;
+    height: 90%;
   }
 }
 
