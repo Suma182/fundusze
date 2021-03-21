@@ -211,6 +211,133 @@ stroke-width:3px;
 
 /*animowana linia + logo koniec */
 
+/*animacja fundusze*/
+
+.eea {
+  position: absolute;
+  left: 5vw;
+  bottom: 27vh;
+}
+
+.euro {
+  position: absolute;
+  left: 15vw;
+  bottom: 22vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  color: green;
+  animation: ojro 2s infinite forwards ease-in-out;
+
+}
+
+@keyframes ojro {
+  0% {opacity:0;}
+  50% {opacity:1;}
+  100% {opacity:0; left: 50vw;}
+}
+
+
+.star {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+
+  margin-left: .9em;
+  margin-right: .9em;
+  margin-bottom: 1.2em;
+
+  border-right:  .3em solid transparent;
+  border-bottom: .7em  solid #FC0;
+  border-left:   .3em solid transparent;
+
+  /* rozmiar gwiazdek */
+  font-size: 20px;}
+
+  .star:before, .star:after {
+    content: '';
+
+    display: block;
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: .6em;
+    left: -1em;
+
+    border-right:  1em solid transparent;
+    border-bottom: .7em  solid #FC0;
+    border-left:   1em solid transparent;
+
+    transform: rotate(-35deg);
+  }
+
+  .star:after {
+    transform: rotate(35deg);
+  }
+
+
+.star-position {
+  position: absolute;
+  right: 25vw;
+  bottom: 35vh;
+}
+
+/*animacja poszczególnych gwiazdek */
+.star1 {
+animation: star1-an 0.5s ease-out forwards;}
+
+@keyframes star1-an {
+to {transform: translateY(-100px);}
+}
+
+
+.star2 {
+animation: star2-an 0.5s ease-out forwards;
+}
+
+@keyframes star2-an {
+to {transform: translate(45px, -80px)}
+}
+
+.star3 {
+animation: star3-an 0.5s ease-out forwards;
+}
+
+@keyframes star3-an {
+to {transform: translate(80px, -45px)}
+}
+
+.star4 {
+animation: star4-an 0.5s ease-out forwards;
+}
+
+@keyframes star4-an {
+to {transform: translateX(100px);}
+}
+
+
+
+.star7 {
+animation: star7-an 0.5s ease-out forwards;
+}
+
+@keyframes star7-an {
+to {transform: translateY(100px);}
+}
+
+
+.star10 {
+animation: star10-an 0.5s ease-out forwards;
+}
+
+@keyframes star10-an {
+to {transform: translateX(-100px);}
+}
+
+
+/*animacja fundusze KONIEC*/
 
 
 /* animowany wykres słupkowy "poziom wsparcia" */
