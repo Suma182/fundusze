@@ -226,7 +226,7 @@ stroke-width:3px;
 .bar-graph-vertical .bar-container {
   float: left;
   height: 350px;
-  margin-right: 50px;
+  margin-right: 60px;
   position: relative;
   text-align: center;
   width: 38px;
@@ -261,11 +261,12 @@ position: absolute;
 
 
 .bar-graph-vertical .year {
-  bottom: 0;
+  height: 650px;
+  bottom:0;
   left: 0;
   margin: 0 auto;
   position: absolute;
-  right: 0;
+  right: 1;
   transform: rotate(0deg);
 }
 
