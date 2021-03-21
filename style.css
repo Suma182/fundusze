@@ -266,7 +266,7 @@ position: absolute;
   margin: 0 auto;
   position: absolute;
   right: 0;
-  transform: rotate(90deg);
+  transform: rotate(0deg);
 }
 
 .bar-graph-two .bar::after {
