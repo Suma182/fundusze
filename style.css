@@ -696,3 +696,31 @@ position: absolute;
 }
 
 /*animacja EOG koniec /*
+
+/* animacja mapa */
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.start {
+    fill: none;
+    stroke: #7d2d68;
+    stroke-width: 1px;
+
+/* Stroke-dasharray property */
+    stroke-dasharray: 1353px;
+    stroke-dashoffset: 1353px;
+    animation: move 3s linear forwards;
+/*     animation-fill-mode: forwards; */
+}
+
+@keyframes move {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+/* animacja mapa KONIEC */
