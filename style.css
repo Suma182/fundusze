@@ -341,8 +341,28 @@ to {transform: translateX(-100px);}
 
 
 /* animowany wykres słupkowy "poziom wsparcia" */
+
+}
+.circle {
+
+  width:15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+  margin:0 auto;
+}
+
+.circle2 {
+
+  width:15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
 .bar-graph .year {
   animation: fade-in-text 2.2s 3s forwards;
+  text-align: center;
 }
 
 .bar-graph-vertical {
@@ -351,7 +371,7 @@ to {transform: translateX(-100px);}
 }
 
 .bar-graph-vertical .bar-container {
-  float: left;
+  float: center;
   height: 350px;
   margin-right: 50px;
   position: relative;
@@ -361,6 +381,8 @@ to {transform: translateX(-100px);}
 
 .bar-one {
   z-index: 5;
+  text-align: center;
+  text-margin: center;
 }
 
 .bar-two {
