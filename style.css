@@ -816,40 +816,64 @@ position: absolute;
 
 /* animacja mapa */
 
+
 .container {
   width: 50%;
   left: 0;
   margin: 0 auto;
 }
-
-.start {
-    fill: none;
-    stroke: #7d2d68;
-    stroke-width: 1px;
-
-/* Stroke-dasharray property */
-    stroke-dasharray: 1353px;
-    stroke-dashoffset: 1353px;
-    animation: move 3s linear forwards;
-/*     animation-fill-mode: forwards; */
-}
-
 .st1 {
-    fill: none;
-    stroke: #000;
+  fill: #fff;
+  stroke: #003399;
     stroke-width: 3px;
+    stroke-dasharray: 1653px;
+    stroke-dashoffset: 1653px;
+    animation: move-st1 2s linear forwards;
 }
 
 .st2 {
-    fill: none;
-    stroke: green;
-    stroke-width: 3px;
+    fill: #fff;
+    stroke: #003300;
+    stroke-width: 4px;
+    stroke-dasharray: 553px;
+    stroke-dashoffset: 553px;
+    animation: move-st2 2s linear forwards;
 }
 
-@keyframes move {
-    100% {
-        stroke-dashoffset: 0;
-    }
+.st4 {
+  fill: #fff;
+  stroke: #003399;
+    stroke-width: 5px;
+    stroke-dasharray: 253px;
+    stroke-dashoffset: 253px;
+    animation: move-st4 2s linear forwards;
+}
+
+.st0 {
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 3px;
+    animation: move-st0 20s linear forwards;
+}
+
+@keyframes move-st1 {
+  50%{fill: #fff;}
+    100% {fill: #003399; stroke-dashoffset: 0;}
+}
+
+@keyframes move-st2 {
+  50%{fill: #fff;}
+    100% {fill: #339933; stroke-dashoffset: 0;}
+}
+
+@keyframes move-st4 {
+  50%{fill: #fff;}
+    100% {fill: #003399; stroke-dashoffset: 0;}
+}
+
+
+@keyframes move-st0 {
+  100%{fill: #e6e6e6; stroke:#e6e6e6;}
 }
 
 
