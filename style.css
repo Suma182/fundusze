@@ -75,7 +75,8 @@ p{
   z-index: 1;
   animation: topp 0.5s ease-in-out;
   animation-delay: 9s;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  z-index: 900;}
 
   @keyframes topp {
       from  {}
@@ -93,7 +94,8 @@ p{
   bottom:0;
   animation: bott 0.5s ease-in-out;
   animation-delay: 9s;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  z-index: 900; }
 
   @keyframes bott {
       from  {}
@@ -130,7 +132,8 @@ p{
   z-index: 2;
   animation: left-top 0.7s  ease-in-out;
   animation-delay: 8s;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  z-index: 5000; }
 
   @keyframes left-top {
       from  {}
@@ -159,6 +162,7 @@ p{
     animation: animate 5s ease-in;
     animation-delay: 4s;
     animation-fill-mode: forwards;
+
 
 }
 
@@ -210,6 +214,77 @@ stroke-width:3px;
 }
 
 /*animowana linia + logo koniec */
+
+/*navbar*/
+
+.navbar {
+  position: fixed;
+  width: 400px;
+  height: 50px;
+  top: 0;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: 20px;
+  z-index: 6000;
+}
+
+li.nav-item {
+  list-style:none;
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav-link {
+  height: 60px;
+  width: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar a:hover:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  left: 0;
+}
+
+#fundusze{
+  padding-top: 100px;
+}
+
+#wsparcie{
+  padding-top: 100px;
+}
+
+#mapa{
+  padding-top: 100px;
+}
+
+#polska{
+  padding-top: 100px;
+}
+
+/*navbar KONIEC*/
 
 /*animacja fundusze*/
 
@@ -540,7 +615,7 @@ position: absolute;
   font-family: Roboto;
   text-anchor: middle;
   text-align: center;
-  font-size: 2vh;
+  font-size: 20px;
   margin-left: 0;
   margin-right: 0;
   text-align: left;}
@@ -642,7 +717,7 @@ position: absolute;
   border-color: #000;
   border-style: solid;
   text-align: left;
-  height: 50vh;
+  height: 500px;
   vertical-align: middle;
 
 
@@ -652,11 +727,11 @@ position: absolute;
 .col-chart {
   display: table-cell;
   vertical-align: middle;
-  height: 50vh;
+  height: 500px;
   line-height: 46vh;
   position: relative;
   float: left;
-  width: 45vw;
+  width: 500px;
   border-color: #000;
   border-style: solid;
 
@@ -743,6 +818,7 @@ position: absolute;
 
 .container {
   width: 50%;
+  left: 0;
   margin: 0 auto;
 }
 
@@ -756,6 +832,18 @@ position: absolute;
     stroke-dashoffset: 1353px;
     animation: move 3s linear forwards;
 /*     animation-fill-mode: forwards; */
+}
+
+.st1 {
+    fill: none;
+    stroke: #000;
+    stroke-width: 3px;
+}
+
+.st2 {
+    fill: none;
+    stroke: green;
+    stroke-width: 3px;
 }
 
 @keyframes move {
