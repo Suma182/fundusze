@@ -797,35 +797,6 @@ z-index: -1;}
  }
 
 
- @property --num {
-   syntax: "<integer>";
-   initial-value: 0;
-   inherits: false;
- }
-
- .bulg {
-   animation: counter-bulg 1s 6s forwards alternate ease-in-out;
-   counter-reset: num var(--num);
-   color:Gray;
-   font-family: 'Roboto',sans-serif;
- }
- .bulg::after {
-   content: counter(num);
- }
-
- @keyframes counter-bulg {
-   from {
-     --num: 0;
-   }
-   to {
-     --num: 210;
-   }
- }
-
-
-
-
-
  .suma2 {
 
    color:Gray;
@@ -873,8 +844,6 @@ z-index: -1;}
  }
 
 
-
-
  .suma {
    animation: counter-suma 20s 5s forwards alternate ease-in-out;
    counter-reset: num var(--num);
@@ -893,6 +862,71 @@ z-index: -1;}
      --num: 2;
    }
  }
+
+
+
+
+
+
+ @property --num {
+   syntax: "<integer>";
+   initial-value: 0;
+   inherits: false;
+ }
+
+ .bulg {
+   animation: counter-bulg 1s 6s forwards alternate ease-in-out;
+   counter-reset: num var(--num);
+   color:Gray;
+   font-family: 'Roboto',sans-serif;
+ }
+ .bulg::after {
+   content: counter(num);
+ }
+
+ @keyframes counter-bulg {
+   from {
+     --num: 0;
+   }
+   to {
+     --num: 210;
+   }
+ }
+
+ .chor {
+   animation: counter-chor 1s 7s forwards alternate ease-in-out;
+   counter-reset: num var(--num);
+   color:Gray;
+   font-family: 'Roboto',sans-serif;
+ }
+ .chor::after {
+   content: counter(num);
+ }
+
+ @keyframes counter-chor {
+   from {
+     --num: 0;
+   }
+   to {
+     --num: 103;
+   }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
