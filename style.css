@@ -600,25 +600,29 @@ position: absolute;
 /* animowany wykres kołowy */
 .tekst_w_kole {
   color:Gray;
-  font-family: Roboto;
+  font-family: 'Roboto',sans-serif;
   text-align: center;
-  top: 50%;
+  font-size: 25px;
+  animation: tabela;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-delay: 4s;
+  opacity: 0;
 
 }
 .tabela {
   animation: tabela;
-  animation-duration: 3s;
-  animation-direction: normal;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
   opacity: 0;
-  font-family: Roboto;
-  text-anchor: middle;
-  text-align: center;
-  font-size: 20px;
+  font-family: 'Roboto',sans-serif;
+  font-weight: bold;
+  color:Gray;
+  font-size: 25px;
   margin-left: 0;
-  margin-right: 0;
-  text-align: left;}
+  margin-right: 0;}
 
   @keyframes tabela {
     0% {opacity: 0;}
@@ -637,11 +641,13 @@ position: absolute;
   animation-direction: reverse, normal;
   animation-fill-mode: forwards, forwards;
   animation-timing-function: ease, linear;
-  opacity: 0;}
+  opacity: 0;
+z-index: -1;}
 
   @keyframes przezroczystosc {
     to {opacity: 1;}
   }
+
 
 
 .bulgaria {
@@ -693,7 +699,7 @@ position: absolute;
 }
 
 .rumunia {
-  animation-delay: 17s;;
+  animation-delay: 17s;
 }
 
 .slowacja {
@@ -709,38 +715,184 @@ position: absolute;
 }
 
 
+.centreL{
+  margin-top: -30px;
+  padding-right: 100px;
+
+}
+
+.centreR{
+  padding-top: 15px;
+  padding-left: 100px;
+}
+
+.centreL p{
+  text-align: right;
+  line-height: 100px;
+}
+
+
 
 .col-lr {
   position: relative;
   float: left;
-  width: 25vw;
-  border-color: #000;
-  border-style: solid;
-  text-align: left;
-  height: 500px;
+  width: 30%;
+  height: 600px;
   vertical-align: middle;
-
-
 }
 
 
 .col-chart {
-  display: table-cell;
-  vertical-align: middle;
-  height: 500px;
-  line-height: 46vh;
+  height: 600px;
+  line-height: 50vh;
+  width: 39%;
   position: relative;
   float: left;
-  width: 500px;
-  border-color: #000;
-  border-style: solid;
 
- }
+}
+
+.wskazniki{
+  display:block;
+  z-index:5000;
+  margin-bottom: -865px;
+}
+
+.red{
+        fill: none;
+        stroke: red;
+          stroke-width: 5px;
+          z-index:5000;
+          stroke-dasharray: 1653px;
+          stroke-dashoffset: 1653px;
+          animation: move-wskaznik 2s linear forwards;
+      }
+      @keyframes move-wskaznik {
+        50%{}
+          100% {stroke-dashoffset: 0;}
+      }
+
+	.wskaznik{
+        fill: none;
+        stroke: #d3d3d3;
+          stroke-width: 3px;
+          z-index:5000;
+          stroke-dasharray: 100%;
+          stroke-dashoffset: 100%;
+          animation-name: move-wskaznik;
+          animation-duration: 8s;
+          animation-fill-mode: forwards;
+          animation-timing-function: ease;
+
+      }
+
+
+      @keyframes move-wskaznik {
+        75%{stroke-dashoffset: 100;}
+          100% {stroke-dashoffset: 0;}
+      }
+
 
  .row-chart {
    position: absolute;
  }
 
+
+ @property --num {
+   syntax: "<integer>";
+   initial-value: 0;
+   inherits: false;
+ }
+
+ .bulg {
+   animation: counter-bulg 1s 6s forwards alternate ease-in-out;
+   counter-reset: num var(--num);
+   color:Gray;
+   font-family: 'Roboto',sans-serif;
+ }
+ .bulg::after {
+   content: counter(num);
+ }
+
+ @keyframes counter-bulg {
+   from {
+     --num: 0;
+   }
+   to {
+     --num: 210;
+   }
+ }
+
+
+
+
+
+ .suma2 {
+
+   color:Gray;
+   font-family: 'Roboto',sans-serif;
+ }
+ .suma2::after {
+   animation-name: counter-suma2;
+   animation-fill-mode: forwards;
+   animation-duration: 15s;
+   animation-delay: 5s;
+   animation-timing-function: ease;
+   content: "0.0";
+ }
+
+ @keyframes counter-suma2 {
+   4% {content: "0.1";}
+    8% {content: "0.2";}
+     12% {content: "0.3";}
+      16% {content: "0.4";}
+       20% {content: "0.5";}
+        24% {content: "0.6";}
+         28% {content: "0.7";}
+          32% {content: "0.8";}
+           36% {content: "0.9";}
+            40% {content: "1.0";}
+             44% {content: "1.1";}
+              48% {content: "1.2";}
+               52% {content: "1.3";}
+                56% {content: "1.4";}
+                 60% {content: "1.5";}
+                  64% {content: "1.6";}
+                  68% {content: "1.7";}
+                   70% {content: "1.8";}
+                   72% {content: "1.9";}
+                   74% {content: "2.0";}
+                   76% {content: "2.1";}
+                   80% {content: "2.2";}
+                   84% {content: "2.3";}
+                   86% {content: "2.4";}
+                   90% {content: "2.5";}
+                   94% {content: "2.6";}
+                   98% {content: "2.7";}
+                   100% {content: "2.7";}
+
+ }
+
+
+
+
+ .suma {
+   animation: counter-suma 20s 5s forwards alternate ease-in-out;
+   counter-reset: num var(--num);
+   color:Gray;
+   font-family: 'Roboto',sans-serif;
+ }
+ .suma::after {
+   content: counter(num);
+ }
+
+ @keyframes counter-suma {
+   from {
+     --num: 0;
+   }
+   to {
+     --num: 2;
+   }
+ }
 
 
 
@@ -816,40 +968,65 @@ position: absolute;
 
 /* animacja mapa */
 
+
 .container {
   width: 50%;
   left: 0;
   margin: 0 auto;
 }
-
-.start {
-    fill: none;
-    stroke: #7d2d68;
-    stroke-width: 1px;
-
-/* Stroke-dasharray property */
-    stroke-dasharray: 1353px;
-    stroke-dashoffset: 1353px;
-    animation: move 3s linear forwards;
-/*     animation-fill-mode: forwards; */
-}
-
 .st1 {
-    fill: none;
-    stroke: #000;
+  fill: #fff;
+  stroke: #003399;
     stroke-width: 3px;
+    stroke-dasharray: 1653px;
+    stroke-dashoffset: 1653px;
+    animation: move-st1 2s linear forwards;
 }
 
 .st2 {
-    fill: none;
-    stroke: green;
-    stroke-width: 3px;
+    fill: #fff;
+    stroke: #003300;
+    stroke-width: 4px;
+    stroke-dasharray: 553px;
+    stroke-dashoffset: 553px;
+    animation: move-st2 2s linear forwards;
 }
 
-@keyframes move {
-    100% {
-        stroke-dashoffset: 0;
-    }
+.st4 {
+  fill: #fff;
+  stroke: #003399;
+    stroke-width: 5px;
+    stroke-dasharray: 253px;
+    stroke-dashoffset: 253px;
+    animation: move-st4 2s linear forwards;
+}
+
+.st0 {
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 3px;
+    animation: move-st0 20s linear forwards;
+}
+
+@keyframes move-st1 {
+  50%{fill: #fff;}
+    100% {fill: #003399; stroke-dashoffset: 0;}
+}
+
+@keyframes move-st2 {
+  50%{fill: #fff;}
+    100% {fill: #339933; stroke-dashoffset: 0;}
+}
+
+@keyframes move-st4 {
+  50%{fill: #fff;}
+    100% {fill: #003399; stroke-dashoffset: 0;}
+}
+
+
+@keyframes move-st0 {
+  75%{fill: #fff; stroke:#fff;}
+  100%{fill: #e6e6e6; stroke:#e6e6e6;}
 }
 
 
