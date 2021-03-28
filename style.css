@@ -1256,11 +1256,25 @@ z-index: -1;}
 /* animacja mapa */
 
 
-.container {
-  width: 50%;
+.container-kraje-left {
+  position: relative;
+  display: inline-block;
+  float: left;
+  height: 700px;
+  width: 74vw;
   left: 0;
   margin: 0 auto;
+
 }
+
+.container-kraje-right {
+  position: relative;
+  display: inline-block;
+  height: 700px;
+  width: 25vw;
+  right: 0;
+}
+
 .st1 {
   fill: #fff;
   stroke: #003399;
