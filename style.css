@@ -912,6 +912,259 @@ z-index: -1;}
    }
  }
 
+ .cyprt {
+   animation: counter-cyprt 1s 8s forwards alternate ease-in-out;
+   counter-reset: num var(--num);
+   color:Gray;
+   font-family: 'Roboto',sans-serif;
+ }
+ .cyprt::after {
+   content: counter(num);
+ }
+
+ @keyframes counter-cyprt {
+   from {
+     --num: 0;
+   }
+   to {
+     --num: 12;
+   }
+ }
+
+ .czec {
+   animation: counter-czec 1s 9s forwards alternate ease-in-out;
+   counter-reset: num var(--num);
+   color:Gray;
+   font-family: 'Roboto',sans-serif;
+ }
+ .czec::after {
+   content: counter(num);
+ }
+
+ @keyframes counter-czec {
+   from {
+     --num: 0;
+   }
+   to {
+     --num: 185;
+   }
+ }
+
+ .esto {
+   animation: counter-esto 1s 10s forwards alternate ease-in-out;
+   counter-reset: num var(--num);
+   color:Gray;
+   font-family: 'Roboto',sans-serif;
+ }
+ .esto::after {
+   content: counter(num);
+ }
+
+ @keyframes counter-esto {
+   from {
+     --num: 0;
+   }
+   to {
+     --num: 68;
+   }
+ }
+
+ .grec {
+   animation: counter-grec 1s 11s forwards alternate ease-in-out;
+   counter-reset: num var(--num);
+   color:Gray;
+   font-family: 'Roboto',sans-serif;
+ }
+ .grec::after {
+   content: counter(num);
+ }
+
+ @keyframes counter-grec {
+   from {
+     --num: 0;
+   }
+   to {
+     --num: 117;
+   }
+ }
+
+ .wegr {
+   animation: counter-wegr 1s 12s forwards alternate ease-in-out;
+   counter-reset: num var(--num);
+   color:Gray;
+   font-family: 'Roboto',sans-serif;
+ }
+ .wegr::after {
+   content: counter(num);
+ }
+
+ @keyframes counter-wegr {
+   from {
+     --num: 0;
+   }
+   to {
+     --num: 215;
+   }
+ }
+
+ .lotw {
+   animation: counter-lotw 1s 13s forwards alternate ease-in-out;
+   counter-reset: num var(--num);
+   color:Gray;
+   font-family: 'Roboto',sans-serif;
+ }
+ .lotw::after {
+   content: counter(num);
+ }
+
+ @keyframes counter-lotw {
+   from {
+     --num: 0;
+   }
+   to {
+     --num: 102;
+   }
+ }
+
+ .litw {
+   animation: counter-litw 1s 14s forwards alternate ease-in-out;
+   counter-reset: num var(--num);
+   color:Gray;
+   font-family: 'Roboto',sans-serif;
+ }
+ .litw::after {
+   content: counter(num);
+ }
+
+ @keyframes counter-litw {
+   from {
+     --num: 0;
+   }
+   to {
+     --num: 118;
+   }
+ }
+
+ .malt {
+   animation: counter-malt 1s 15s forwards alternate ease-in-out;
+   counter-reset: num var(--num);
+   color:Gray;
+   font-family: 'Roboto',sans-serif;
+ }
+ .malt::after {
+   content: counter(num);
+ }
+
+ @keyframes counter-malt {
+   from {
+     --num: 0;
+   }
+   to {
+     --num: 8;
+   }
+ }
+
+.pols {
+  animation: counter-pols 1s 16s forwards alternate ease-in-out;
+  counter-reset: num var(--num);
+  color:Gray;
+  font-family: 'Roboto',sans-serif;
+}
+.pols::after {
+  content: counter(num);
+}
+
+@keyframes counter-pols {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 809;
+  }
+}
+
+.port {
+  animation: counter-port 1s 17s forwards alternate ease-in-out;
+  counter-reset: num var(--num);
+  color:Gray;
+  font-family: 'Roboto',sans-serif;
+}
+.port::after {
+  content: counter(num);
+}
+
+@keyframes counter-port {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 103;
+  }
+}
+
+.rumu {
+  animation: counter-rumu 1s 18s forwards alternate ease-in-out;
+  counter-reset: num var(--num);
+  color:Gray;
+  font-family: 'Roboto',sans-serif;
+}
+.rumu::after {
+  content: counter(num);
+}
+
+@keyframes counter-rumu {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 503;
+  }
+}
+
+.slowa {
+  animation: counter-slowa 1s 19s forwards alternate ease-in-out;
+  counter-reset: num var(--num);
+  color:Gray;
+  font-family: 'Roboto',sans-serif;
+}
+.slowa::after {
+  content: counter(num);
+}
+
+@keyframes counter-slowa {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 113;
+  }
+}
+
+ .slowe {
+   animation: counter-slowe 1s 20s forwards alternate ease-in-out;
+   counter-reset: num var(--num);
+   color:Gray;
+   font-family: 'Roboto',sans-serif;
+ }
+ .slowe::after {
+   content: counter(num);
+ }
+
+ @keyframes counter-slowe {
+   from {
+     --num: 0;
+   }
+   to {
+     --num: 38;
+   }
+ }
+
+
+
+
+
+
+
 
 
 
