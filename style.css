@@ -69,18 +69,20 @@ p{
   float: left;
   width: 100%;
   top: 0;
-  height: 300px;
+  height: 50vh;
   background: rgb(15,75,199);
   background: linear-gradient(0deg, rgba(15,75,199,1) 23%, rgba(0,48,150,1) 74%);
   z-index: 1;
-  animation: topp 0.5s ease-in-out;
-  animation-delay: 9s;
+  animation: topp 9s ease-in-out;
+
   animation-fill-mode: forwards;
   z-index: 900;}
 
   @keyframes topp {
-      from  {}
-      to {transform: translateY(-210px)}
+
+    15% {transform: translateY(-210px)}
+    95% {transform: translateY(-210px)}
+    100% {transform: translateY(-430px)}
     }
 
 
@@ -89,19 +91,18 @@ p{
   position: fixed;
   float: left;
   width: 100%;
-  height: 300px;
+  height: 50vh;
   background: linear-gradient(180deg, rgba(15,75,199,1) 23%, rgba(0,48,150,1) 74%);
   bottom:0;
-  animation: bott 0.5s ease-in-out;
-  animation-delay: 9s;
+  animation: bott 9s ease-in-out;
   animation-fill-mode: forwards;
   z-index: 900; }
 
   @keyframes bott {
-      from  {}
-      to {transform: translateY(210px)}
-    }
-
+    15% {transform: translateY(210px)}
+    95% {transform: translateY(210px)}
+    100% {transform: translateY(600px)}
+}
 /*animacja górny i dolny pasek koniec*/
 
 
@@ -127,7 +128,7 @@ p{
   display: flex;
   width: 100%;
   top: 40%;
-  left: 25%;
+  left: 40%;
   zoom: 150%;
   z-index: 2;
   animation: left-top 0.7s  ease-in-out;
@@ -137,7 +138,7 @@ p{
 
   @keyframes left-top {
       from  {}
-      to   {transform: translateX(-31vw) translateY(-29vh) scale(0.5); filter: invert(1);}
+      to   {transform: translateX(-42vw) translateY(-28vh) scale(0.5); filter: invert(1);}
 }
 
 
@@ -145,13 +146,6 @@ p{
   margin-right: -79px;
   margin-top: -52px;
   transform: scale(0.62);
-  animation: svg 1s ease-out;
-  animation-delay: 9s;
-  animation-fill-mode: forwards; }
-
-  @keyframes svg {
-      from  {opacity: 1;}
-      to   {opacity: 0;}
 }
 
 
@@ -174,7 +168,7 @@ p{
     65%  {background: url('png/1.png'), url('png/2.png'), url('png/3.png'), url('png/5.png'); background-size: contain; background-repeat: no-repeat;}
     80% {background: url('png/1.png'), url('png/2.png'), url('png/3.png'), url('png/4.png'), url('png/5.png'), url('png/6.png'); background-size: contain; background-repeat: no-repeat;}
     95% {background: url('png/1.png'), url('png/2.png'), url('png/3.png'), url('png/4.png'), url('png/5.png'), url('png/6.png'); background-size: contain; background-repeat: no-repeat;}
-    100% {background: url('png/7.png'); background-size: contain; background-repeat: no-repeat;}
+    100% {background: url('png/1.png'), url('png/2.png'), url('png/3.png'), url('png/4.png'), url('png/5.png'), url('png/6.png'); background-size: contain; background-repeat: no-repeat;}
 }
 
 
@@ -204,27 +198,24 @@ stroke-width:3px;
 }
 }
 
-@keyframes fade-in {
-0% {
-  opacity: 0;
-}
-100% {
-  opacity: 100;
-}
-}
-
 /*animowana linia + logo koniec */
+
+
+
+
+
+
 
 /*navbar*/
 
 .navbar {
   position: fixed;
-  width: 400px;
+  width: 800px;
   height: 50px;
   top: 0;
   left: 50%;
-  margin-left: -150px;
-  margin-top: 20px;
+  margin-left: -250px;
+  margin-top: 25px;
   z-index: 6000;
 }
 
@@ -232,7 +223,7 @@ li.nav-item {
   list-style:none;
   position: relative;
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .nav-link {
@@ -240,7 +231,8 @@ li.nav-item {
   width: 50px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  color: blue;
+  font-size: 25px;
+  color: white;
   text-decoration: none;
 }
 
@@ -249,7 +241,7 @@ li.nav-item {
   bottom: 0;
   content: "";
   display: block;
-  height: 1px;
+  height: 2px;
   left: 50%;
   position: absolute;
   background: #fff;
@@ -261,7 +253,7 @@ li.nav-item {
   bottom: 0;
   content: "";
   display: block;
-  height: 1px;
+  height: 2px;
   position: absolute;
   background: #fff;
   width: 100%;
@@ -358,6 +350,23 @@ li.nav-item {
   right: 25vw;
   bottom: 35vh;
 }
+
+.star-big-position{
+  position: absolute;
+  left: 10vw;
+  bottom: 33vh;
+  animation: star-big 2s 18s ease-out infinite;
+  transform: scale(10);
+  opacity: 0;
+  z-index: -1;}
+
+
+  @keyframes star-big {
+  0% {opacity: 0;}
+  50% {opacity: 0.3;}
+  100% {opacity: 0;}
+}
+
 
 /*animacja poszczególnych gwiazdek */
 .star1 {
@@ -1195,7 +1204,7 @@ z-index: -1;}
 }
 
 .labele{
-    animation: eoge 2s 2s ease-in-out;
+    animation: eoge 2s 13s ease-in-out;
     animation-fill-mode: forwards;
     opacity: 1;
       display: inline-block;
@@ -1210,7 +1219,7 @@ z-index: -1;}
 }
 
 .labelo{
-    animation: eogo 2s 2s ease-in-out;
+    animation: eogo 2s 13s ease-in-out;
     animation-fill-mode: forwards;
     opacity: 1;
       display: inline-block;
@@ -1225,7 +1234,7 @@ z-index: -1;}
 }
 
 .labelg{
-    animation: eogg 2s 2s ease-in-out;
+    animation: eogg 2s 13s ease-in-out;
     animation-fill-mode: forwards;
     opacity: 1;
       display: inline-block;
@@ -1240,7 +1249,7 @@ z-index: -1;}
 }
 
 .label2{
-    animation: eog2 4s 2s ease-in-out;
+    animation: eog2 4s 13s ease-in-out;
     animation-fill-mode: forwards;
     opacity: 0;
       display: inline-block;
@@ -1256,12 +1265,19 @@ z-index: -1;}
 /* animacja mapa */
 
 
+
+.container-kraje-left p {
+font-size: 20px;
+line-height: 1;
+padding-left: 250px;
+}
+
 .container-kraje-left {
   position: relative;
   display: inline-block;
   float: left;
   height: 700px;
-  width: 74vw;
+  width: 60vw;
   left: 0;
   margin: 0 auto;
 
@@ -1271,8 +1287,9 @@ z-index: -1;}
   position: relative;
   display: inline-block;
   height: 700px;
-  width: 25vw;
+  width: 39vw;
   right: 0;
+  z-index: 1;
 }
 
 .st1 {
@@ -1281,7 +1298,9 @@ z-index: -1;}
     stroke-width: 3px;
     stroke-dasharray: 1653px;
     stroke-dashoffset: 1653px;
+    transition: all .5s ease;
     animation: move-st1 2s linear forwards;
+
 }
 
 .st2 {
@@ -1290,6 +1309,7 @@ z-index: -1;}
     stroke-width: 4px;
     stroke-dasharray: 553px;
     stroke-dashoffset: 553px;
+    transition: all .5s ease;
     animation: move-st2 2s linear forwards;
 }
 
@@ -1299,6 +1319,7 @@ z-index: -1;}
     stroke-width: 5px;
     stroke-dasharray: 253px;
     stroke-dashoffset: 253px;
+    transition: all .5s ease;
     animation: move-st4 2s linear forwards;
 }
 
@@ -1308,6 +1329,84 @@ z-index: -1;}
     stroke-width: 3px;
     animation: move-st0 20s linear forwards;
 }
+
+.enlarged {
+  animation-fill-mode: none;
+  fill: #ffcc00;
+  stroke: #ffcc00;
+  stroke-width: 10px;
+  stroke-dashoffset: 0;
+  transition: all .5s ease;
+  z-index: 5000 !important;
+}
+
+.onhover{
+transition: all .5s ease;
+}
+
+.onhover:hover{
+  text-shadow: 1px 1px;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+/*
+#islandia:hover {
+  animation-fill-mode: none;
+  fill: #ffcc00;
+  stroke: #ffcc00;
+  stroke-width: 10px;
+  stroke-dashoffset: 0;
+  transition: all .5s ease;
+  z-index: 5000 !important;
+
+}
+
+#enl-islandia{
+  color: red;
+  cursor: alias;
+}
+
+
+#enl-islandia:hover ~ #islandia {
+  animation-fill-mode: none;
+  fill: #ffcc00;
+  stroke: #ffcc00;
+  stroke-width: 10px;
+  stroke-dashoffset: 0;
+  transition: all .5s ease;
+  z-index: 5000 !important;
+
+}
+
+#enl-islandia:hover + #islandia {
+  animation-fill-mode: none;
+  fill: #ffcc00;
+  stroke: #ffcc00;
+  stroke-width: 10px;
+  stroke-dashoffset: 0;
+  transition: all .5s ease;
+  z-index: 5000 !important;
+
+}
+
+#enl-islandia:hover > #islandia {
+  animation-fill-mode: none;
+  fill: #ffcc00;
+  stroke: #ffcc00;
+  stroke-width: 10px;
+  stroke-dashoffset: 0;
+  transition: all .5s ease;
+  z-index: 5000 !important;
+
+}
+
+
+
+
+*/
+
+
 
 @keyframes move-st1 {
   50%{fill: #fff;}

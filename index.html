@@ -10,7 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
   <script src="main.js" type="text/javascript"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+                new WOW().init();
+                </script>
+
 
 
 
@@ -18,7 +24,8 @@
 <body>
 
 
-<!--
+
+
 <div class="col-middle wrapper">
     <div class="logo">
     <div class="svg">
@@ -37,24 +44,38 @@
 
 <div class="bottom">
   </div>
--->
 
 
 <!-- Navigation -->
     <nav class="navbar" id="mainNav">
           <ul class="navbar-nav">
+
             <li class="nav-item">
-              <a id="tfundusze" class="nav-link myLink" href="#fundusze-top">Fundusze</a>
+                      <div class="wow fadeInDown" data-wow-delay="9s" data-wow-duration="1s">
+              <a id="tfundusze" class="nav-link" href="#fundusze-top">Fundusze</a>
+                    </div>
             </li>
+
             <li class="nav-item">
+                <div class="wow fadeInDown" data-wow-delay="9.5s" data-wow-duration="1s">
               <a id="twsparcie" class="nav-link" href="#wsparcie-top">Wsparcie</a>
+                </div>
             </li>
+
+
             <li class="nav-item">
+                <div class="wow fadeInDown" data-wow-delay="10s" data-wow-duration="1s">
               <a id="tmapa" class="nav-link" href="#mapa-top">Kraje</a>
+              </div>
             </li>
+
+
             <li class="nav-item">
+                <div class="wow fadeInDown" data-wow-delay="10.5s" data-wow-duration="1s">
             <a id="tpolska" class="nav-link" href="#polska-top">Polska</a>
+            </div>
             </li>
+
           </ul>
     </nav>
 
@@ -62,15 +83,18 @@
 
 <div id="fundusze-top">
 <section id="fundusze">
-  <h1 class="wow fadeInRight" data-wow-delay="1s" data-wow-duration="2s">Fundusze</h1> <h1> <div class="labele">E</div> <div class="labelo">O</div> <div class="labelg">G</div> <div class="label2">  Europejskiego Obszaru Gospodarczego</div> </h2>
-  <p class="wow fadeInUp" data-wow-delay="3s" data-wow-duration="2s">Głównym celem funduszy EOG i funduszy norweskich jest zmniejszanie różnic ekonomicznych i społecznych w obrębie EOG oraz wzmacnianie stosunków dwustronnych pomiędzy państwami-darczyńcami a państwem-beneficjentem. W zamian za udzielaną pomoc finansową, państwa-darczyńcy korzystają z dostępu do rynku wewnętrznego UE mimo że nie są jej członkami.</p>
+  <h1 class="wow fadeInRight" data-wow-delay="11s" data-wow-duration="2s">Fundusze</h1> <h1 class="wow fadeInRight" data-wow-delay="11s" data-wow-duration="2s"> <div class="labele">E</div> <div class="labelo">O</div> <div class="labelg">G</div> <div class="label2">  Europejskiego Obszaru Gospodarczego</div> </h1>
+  <p class="wow fadeInUp" data-wow-delay="14s" data-wow-duration="2s">Głównym celem funduszy EOG i funduszy norweskich jest zmniejszanie różnic ekonomicznych i społecznych w obrębie EOG oraz wzmacnianie stosunków dwustronnych pomiędzy państwami-darczyńcami a państwem-beneficjentem. W zamian za udzielaną pomoc finansową, państwa-darczyńcy korzystają z dostępu do rynku wewnętrznego UE mimo że nie są jej członkami.</p>
 
 
-<img class="eea" src="png\eea.png">
+<img class="eea wow fadeInLeft" data-wow-delay="15s" data-wow-duration="2s" src="png\eea.png"></img>
+<div class="star-big-position"><i class="star"></i></div>
 
-<p class="euro">&#128;</p>
+<p class="euro wow" data-wow-delay="16s" data-wow-duration="2s">&#128;</p>
 
+<section class="wow fadeInRight" data-wow-delay="15s" data-wow-duration="2s">
 <p>
+
 <div class="stars">
     <div class="star-position star1"><i class="star"></i></div>
     <div class="star-position star2"><i class="star"></i></div>
@@ -84,9 +108,10 @@
     <div class="star-position star10"><i class="star"></i></div>
     <div class="star-position star11"><i class="star"></i></div>
     <div class="star-position star12"><i class="star"></i></div>
+</div>
 
-  </div>
 </p>
+</section>
 
 
 
@@ -145,8 +170,35 @@
 
           <div class="container-kraje-left">
 
-        Lista krajów
 
+
+
+
+
+
+        <h1 id="enl-darczyncy" class="onhover wow fadeInRight" data-wow-delay="1s" data-wow-duration="2s" data-wow-delay="1.5s">Darczyńczy</h1>
+
+        <p id="enl-norwegia"class="onhover wow fadeInUp"  data-wow-duration="2s" data-wow-delay="2s">Norwegia</p>
+        <p id="enl-islandia" class="onhover wow fadeInUp"  data-wow-duration="2s" data-wow-delay="3s">Islandia</p>
+        <p id="enl-liechten" class="onhover wow fadeInUp"  data-wow-duration="2s" data-wow-delay="4s">Liechtenstein</p>
+
+        <h1 id="enl-obdarowane" class="onhover wow fadeInRight"  data-wow-duration="2s" data-wow-delay="5s">Kraje obdarowane</h1>
+
+        <p id="enl-cypr"class="onhover wow fadeInUp"  data-wow-duration="2s" data-wow-delay="6s">Cypr</p>
+        <p id="enl-malta"class="onhover wow fadeInUp"  data-wow-duration="2s" data-wow-delay="7s">Malta</p>
+        <p id="enl-slowenia"class="onhover wow fadeInUp"  data-wow-duration="2s" data-wow-delay="8s">Słowenia</p>
+        <p id="enl-estonia"class="onhover wow fadeInUp"  data-wow-duration="2s" data-wow-delay="9s">Estonia</p>
+        <p id="enl-bulgaria"class="onhover wow fadeInUp"  data-wow-duration="2s" data-wow-delay="10s">Bułgaria</p>
+        <p id="enl-rumunia"class="onhover wow fadeInUp"  data-wow-duration="2s" data-wow-delay="11s">Rumunia</p>
+        <p id="enl-lotwa"class="onhover wow fadeInUp"  data-wow-duration="2s" data-wow-delay="12s">Łotwa</p>
+        <p id="enl-litwa"class="onhover wow fadeInUp"  data-wow-duration="2s" data-wow-delay="13s">Litwa</p>
+        <p id="enl-wegry"class="onhover wow fadeInUp"  data-wow-duration="2s" data-wow-delay="14s">Węgry</p>
+        <p id="enl-slowacja"class="onhover wow fadeInUp"  data-wow-duration="2s" data-wow-delay="15s">Słowacja</p>
+        <p id="enl-czechy"class="onhover wow fadeInUp"  data-wow-duration="2s" data-wow-delay="16s">Czechy</p>
+        <p id="enl-chorwacja"class="onhover wow fadeInUp"  data-wow-duration="2s" data-wow-delay="17s">Chorwacja</p>
+        <p id="enl-polska"class="onhover wow fadeInUp"  data-wow-duration="2s" data-wow-delay="18s">Polska</p>
+        <p id="enl-grecja"class="onhover wow fadeInUp"  data-wow-duration="2s" data-wow-delay="19s">Grecja</p>
+        <p id="enl-portugalia"class="onhover wow fadeInUp"  data-wow-duration="2s" data-wow-delay="20s">Portugalia</p>
 
 
           </div>
@@ -462,10 +514,179 @@
                  </g>
 
 
+<script>
+
+jQuery(document).ready(function() {
+jQuery('#enl-islandia').hover(function(){
+ jQuery('#islandia').addClass('enlarged');
+},function(){
+jQuery('#islandia').removeClass('enlarged');
+});
+});
+
+jQuery(document).ready(function() {
+jQuery('#enl-norwegia').hover(function(){
+ jQuery('#norwegia').addClass('enlarged');
+},function(){
+jQuery('#norwegia').removeClass('enlarged');
+});
+});
+
+jQuery(document).ready(function() {
+jQuery('#enl-liechten').hover(function(){
+ jQuery('#liechtenstein').addClass('enlarged');
+},function(){
+jQuery('#liechtenstein').removeClass('enlarged');
+});
+});
+
+jQuery(document).ready(function() {
+jQuery('#enl-darczyncy').hover(function(){
+ jQuery('#norwegia,#liechtenstein,#islandia').addClass('enlarged');
+},function(){
+jQuery('#norwegia,#liechtenstein,#islandia').removeClass('enlarged');
+});
+});
+
+jQuery(document).ready(function() {
+jQuery('#enl-cypr').hover(function(){
+ jQuery('#cypr').addClass('enlarged');
+},function(){
+jQuery('#cypr').removeClass('enlarged');
+});
+});
+
+jQuery(document).ready(function() {
+jQuery('#enl-malta').hover(function(){
+ jQuery('#malta').addClass('enlarged');
+},function(){
+jQuery('#malta').removeClass('enlarged');
+});
+});
+
+jQuery(document).ready(function() {
+jQuery('#enl-slowenia').hover(function(){
+ jQuery('#slowenia').addClass('enlarged');
+},function(){
+jQuery('#slowenia').removeClass('enlarged');
+});
+});
+
+jQuery(document).ready(function() {
+jQuery('#enl-estonia').hover(function(){
+ jQuery('#estonia').addClass('enlarged');
+},function(){
+jQuery('#estonia').removeClass('enlarged');
+});
+});
+
+jQuery(document).ready(function() {
+jQuery('#enl-bulgaria').hover(function(){
+ jQuery('#bulgaria').addClass('enlarged');
+},function(){
+jQuery('#bulgaria').removeClass('enlarged');
+});
+});
+
+jQuery(document).ready(function() {
+jQuery('#enl-rumunia').hover(function(){
+ jQuery('#rumunia').addClass('enlarged');
+},function(){
+jQuery('#rumunia').removeClass('enlarged');
+});
+});
+
+jQuery(document).ready(function() {
+jQuery('#enl-lotwa').hover(function(){
+ jQuery('#lotwa').addClass('enlarged');
+},function(){
+jQuery('#lotwa').removeClass('enlarged');
+});
+});
+
+jQuery(document).ready(function() {
+jQuery('#enl-litwa').hover(function(){
+ jQuery('#litwa').addClass('enlarged');
+},function(){
+jQuery('#litwa').removeClass('enlarged');
+});
+});
+
+jQuery(document).ready(function() {
+jQuery('#enl-wegry').hover(function(){
+ jQuery('#wegry').addClass('enlarged');
+},function(){
+jQuery('#wegry').removeClass('enlarged');
+});
+});
+
+jQuery(document).ready(function() {
+jQuery('#enl-slowacja').hover(function(){
+ jQuery('#slowacja').addClass('enlarged');
+},function(){
+jQuery('#slowacja').removeClass('enlarged');
+});
+});
+
+
+jQuery(document).ready(function() {
+jQuery('#enl-czechy').hover(function(){
+ jQuery('#czechy').addClass('enlarged');
+},function(){
+jQuery('#czechy').removeClass('enlarged');
+});
+});
+
+
+jQuery(document).ready(function() {
+jQuery('#enl-chorwacja').hover(function(){
+ jQuery('#chorwacja').addClass('enlarged');
+},function(){
+jQuery('#chorwacja').removeClass('enlarged');
+});
+});
+
+jQuery(document).ready(function() {
+jQuery('#enl-polska').hover(function(){
+ jQuery('#polska').addClass('enlarged');
+},function(){
+jQuery('#polska').removeClass('enlarged');
+});
+});
+
+
+jQuery(document).ready(function() {
+jQuery('#enl-grecja').hover(function(){
+ jQuery('#grecja').addClass('enlarged');
+},function(){
+jQuery('#grecja').removeClass('enlarged');
+});
+});
+
+jQuery(document).ready(function() {
+jQuery('#enl-portugalia').hover(function(){
+ jQuery('#portugalia').addClass('enlarged');
+},function(){
+jQuery('#portugalia').removeClass('enlarged');
+});
+});
+
+
+jQuery(document).ready(function() {
+jQuery('#enl-obdarowane').hover(function(){
+jQuery('#portugalia,#cypr,#malta,#slowenia,#estonia,#bulgaria,#rumunia,#lotwa,#litwa,#wegry,#slowacja,#czechy,#chorwacja,#polska,#grecja').addClass('enlarged');
+},function(){
+jQuery('#portugalia,#cypr,#malta,#slowenia,#estonia,#bulgaria,#rumunia,#lotwa,#litwa,#wegry,#slowacja,#czechy,#chorwacja,#polska,#grecja').removeClass('enlarged');
+});
+});
+
+</script>
+
 
 
                  <!-- Darczyńcy -->
-                 <path id="islandia" inkscape:connector-curvature="0" class="st1"style="animation-delay: 2s;"  d="M-145,60l-8.7-4.3l1.5-1.4l0.6-2.3l1,2.8l0.6-0.6l3,0.4l3.5-3.3
+
+                 <path id="islandia" inkscape:connector-curvature="0" class="st1" style="animation-delay: 2s;"  d="M-145,60l-8.7-4.3l1.5-1.4l0.6-2.3l1,2.8l0.6-0.6l3,0.4l3.5-3.3
                  l2.6,0.8l-1.5-1.1l-3.6-0.3l2-0.3l-0.9-0.8l1.1-1.4l4.1-0.6l-1.4-0.4l-4.4,1.3l1.4-6.3h-1.7l-0.6-0.9l0.1,0.6l-2.9-2.8l-0.7-0.1
                  l-0.6,0.3l-2.9-3.5l2.4,1.4l4-0.4l-0.4,1.6l1.1-0.9l2.6-0.3l-0.1,2.1l0.1-0.8h6.7l-2.7,0.5l-2.4-2.2l0.2-0.3l7.2-1.3l-3.6-1.9
                  l2.5-1.5l-4.6-0.5l0.2-2.1l-0.7,0.5v-0.6l-1.5,0.1v-0.6l-1.1,1.4l-0.6-1l-4.4-0.5l0.6-0.8l-3.1-2.3l4.6,1.9l0.5-4.8l3.6,4.5l-1-1.5
@@ -477,6 +698,7 @@
                  l-0.2,4.3l-2.6,0.8l-0.6,1l1.7,4.1l-4-2.1l2.7,3.1l-2.2-0.8l1.5,1.4l-4.2,1.6l-1.1-2.5l0.9,2.8l-2.6,0.5l-0.9,2.9l-1.4-0.3l-2.2,1.5
                  l-2.4-3.6l-0.2,2h-0.9l0.4,0.4l-10.2,2.6l-2-1.8l-1.1,2l-1.1-1.1l-4.5-0.8L-125,75l-6.4-0.1l-9.1-8.3l-0.5-2l1.9-1.6l-2,1.5l0.4-2.9
                  l-1.4,0.9l-1.6-2.4L-145,60C-145,60-145,60-145,60z"/>
+
                  <path id="norwegia" inkscape:connector-curvature="0" class="st1" style="animation-delay: 1s;" d="M135.8,21.6L135.8,21.6 M137.1,21.9l0.1,0.1
                  M157.3,43.5L157.3,43.5 M190.2-4.1l1,3.9l-4.1-0.4l-3.3,11.4L183.1,3l-9.6-6.3l-0.1-0.6L173-3.8l-0.1-0.3v0.3l-4.1,4l-3.2,0.3
                  l-3.1,23.9l-7.2-2.9l-0.5,2l-7.6,1.6l-6-8.4l-2.7,4.6l-2.1-0.8l-0.9,0.6l0.4,0.3l-3.1,0.5l1.6,1.6l-0.7,10.2l-11.5-1.3l-0.1,9.2
@@ -528,13 +750,15 @@
                  <!-- Obdarowani -->
 
 
-                 <path id="pt-0" inkscape:connector-curvature="0" class="st2" style="animation-delay: 19s;"  d="M-154.7,523.6l4.5-12.2l4.9-2.8h-2.2l-1.5-4.5l-0.9-0.3l7-9
+                 <path id="portugalia" inkscape:connector-curvature="0" class="st2" style="animation-delay: 20s;"  d="M-154.7,523.6l4.5-12.2l4.9-2.8h-2.2l-1.5-4.5l-0.9-0.3l7-9
                  l-2.9-2.9l-2-8.7l3.6,0.9l5-1.9l-0.5-4.9l3.6-3l-0.5-1.6l0.7-0.6l1.2-5.7l-1.1-3l1.7,0.1l9-6.7l-3.4-2.4v-5.2l-7.2-2v1.1l-5.6-0.3
                  l0.5-0.6l-3.6-0.6l0.1-1.1l-3.2,1.1l1.4-4.1l-1-0.3l0.2-0.9l-7.2,1.3l-2.6,3l2.2,1.1l-1.7,0.4l-0.4,7.9l0.6,1l-3,7.4l1.7-2.4
                  l0.7,1.6l-3,1.5l-3.4,6.4l1.4,1.5l-1-0.5l-7.1,9.7l0.4,0.6h-2.9l0.2,2.4l-3.7,7.8l2.1,5.7l4.4-0.5l1.4,0.9l0.6-1.3v2l1.6,1l-4.1-2.3
                  l1.1,1.8l-2.5,6.9l0.7,1.4l-0.4,2.8l0.9-0.1l-1.2,0.5l-4.1,10.6l4.9-0.8l9.4,4.6L-154.7,523.6L-154.7,523.6L-154.7,523.6
                  L-154.7,523.6z"/>
-                 <path id="gr-7" inkscape:connector-curvature="0" class="st2" style="animation-delay: 18s;" d="M270.8,454.3v6.4l-2.5,1.4l-0.9-0.3l-3.1,1l-0.5,0.6l-2.9,1.1
+
+
+                 <path id="grecja" inkscape:connector-curvature="0" class="st2" style="animation-delay: 19s;" d="M270.8,454.3v6.4l-2.5,1.4l-0.9-0.3l-3.1,1l-0.5,0.6l-2.9,1.1
                  l-0.5-0.5l-5.2-0.9l-0.3,0.8l-1.1-0.8l-1.5-0.1l-1.2-1.8l-1.6,0.8l-1.5-0.1l-1.2,0.8l-1.1-0.1l-0.8,1.7l-8.7,2.5l-0.7,1.2l-2.9,0.5
                  v-0.4l-2.5,4.1l-0.7-0.5l-0.5,1l-7.3,1.1l-2.1,3.7l-1.2,0.1l-0.7,0.9l-7.6,2.1l-0.2,0.3l1.6,3.3l-3.6,9.2l-4,2.6l1.4,2.5l-4.7,2.6
                  v0.3l2.3,0.4l1.1,3.5l6.5,4.9l0.5,1.3l0.9,0.7l0.2,0.8l-1.6,1.7l-0.2,3.3l2.7-1.2l-1-1l0.2-0.9l0.8-0.1l0.3-0.3l0.7,1.7l1.1-0.1
@@ -545,7 +769,7 @@
                  l0.7-1.8l-4.7-1.3l-1.7-1.8l-3.5-0.2l-1-2.2l-2.4,0.7l-1.2-1.6H237l-1.1-0.9l-1.1,0.8l-1.1-0.4l5.9-2.6l0.4-1.7l-3.2-3.1l1.1-0.8
                  v-1.1l2.6,0.8l1.3,1.8l-0.6,0.9l-0.6,0.1l-0.1-0.4l-0.3,0.5l1,0.5l2.5-1.7L231,488.8l0.9-3.8l-1.2-1.4l1.6-1.1l0.3-1l1.4-1.2
                  l0.7,3.8l5.4,1.8l1.5,3.9h4.5l-4.9-5.1l3.2,0.1l4.1,4l0.2-2.9l-4-2.7l5.9-0.2l2,2.1l1.2-0.7l-5.9-3.9l0.3,0.8l-0.3,0.5l-1.7-0.5
-                 l0.4-1.9l-2.9-2.7l4.8-0.8l3.2-4.1l4.9,0.3l2.4-2.3l12.1-0.1l1.2,2.3l2.9-5.6l-1.4-4.6l2.1-1.8l1-0.1l-1.1-4.3L270.8,454.3
+
                  L270.8,454.3L270.8,454.3L270.8,454.3z M255.5,473.3l-1.7,1.5l1.2,2.2l1.9-0.8L255.5,473.3L255.5,473.3L255.5,473.3z M267.7,475.9
                  l-1.2,1.8l1.6-0.3L267.7,475.9L267.7,475.9z M267.1,483.9h-0.2l-1.2,1.5l-1.3-0.4l-1.7,1.5l1.2,1.8l0.8-1.3l1.5,1.2L267.1,483.9
                  L267.1,483.9L267.1,483.9L267.1,483.9z M279.8,492.3l-4.2,2.4l0.9,2.7l2.6-1.8l0.2,1.4l2.5,1.7l2.1-1.1l-0.9-1.5l1.9,1.1
@@ -577,7 +801,9 @@
                  l0.7-1.6L246.8,549.3L246.8,549.3L246.8,549.3L246.8,549.3z M302.2,553.8l-0.9,0.5l0.3,0.8L302.2,553.8L302.2,553.8z M293.6,557.8
                  l-5.7,4.4l-1.3-3.5l-3.5,1.7l-1.7-0.7l-3.9,0.8l-0.9-1l-9,2.8l-1.4-1.7l-2-0.1l1-1.5l-6.5,2.1l-1.2-1.3l1.2,6.2l5.3-1l0.4,0.5h9.9
                  l0.3,2.3l19.7-5.9L293.6,557.8L293.6,557.8L293.6,557.8z"/>
-                 <path id="pl-1" inkscape:connector-curvature="0" class="st2" style="animation-delay: 17s;" d="M152,255l-15.4,6.1l-2.2,4l-14.7,7.3l-2.1,5.3l1.8,4.1l-0.7,0.6
+
+
+                 <path id="polska" inkscape:connector-curvature="0" class="st2" style="animation-delay: 18s;" d="M152,255l-15.4,6.1l-2.2,4l-14.7,7.3l-2.1,5.3l1.8,4.1l-0.7,0.6
                  l-1-3.3l-2.4-1.7l-0.3,0.8l2,6.9l-2.7,7.4l5.2,4l-0.4,3.9l1.5,1.6v2.1l0.7,0.5l-1.2,3.8l1.5,2.9l-0.2,1.9l2.1,1l1.2,2.6l-1.1,7.5
                  l3-2.6l1.7,2.3l5.2,1.5l0.6,1.4l1.4-0.4l0.4,1.4l3.4-1.1l-1.1,3.9l5.9,4.8l0.7-1.5l2.2-1l-1.9-3.1l8.3,1.9l0.2-0.9h0.4l-1.1,2.6
                  l1.7,0.9l0.6,1.4l0.9,0.4l1.6-1.5l0.5,0.5l5,1.3l1.4,3.3l2,0.5l0.6,2.4l1.5,0.1l0.1,1.6l4.9-3.9l1.4,2.3l0.7-0.1l-0.1,0.9l1.7-0.3
@@ -586,7 +812,7 @@
                  l-8.8-22.1l-6.6-3.5l-0.7,1l-28.3,2.5l-4.8,3.4l-0.3-1l3.9-2.4l-0.6-0.3l-8,2.6l-2.9-3.9l0.2-1.4l3.4,1.2L152,255L152,255L152,255z
                  M119.5,272.3l-3.5,2.3l-1.6-0.1l0,0l-0.3,0.2l0.2,0.8l0,0l0,0l1.2,0.8l0.3-0.6l0.4-0.1l-0.3-0.4l0.1-0.3l0.4,0.4l1.5,0.4v0.3l0,0
                  l1-3.2L119.5,272.3L119.5,272.3L119.5,272.3L119.5,272.3z"/>
-                 <path id="hr-2" inkscape:connector-curvature="0" class="st2" style="animation-delay: 16s;" d="M145,394l-1.5,1.2l0.8,1.8h-1.4l-0.5-0.3l-1,0.3l0.3,0.8l-2.9,1.6
+                 <path id="chorwacja" inkscape:connector-curvature="0" class="st2" style="animation-delay: 17s;" d="M145,394l-1.5,1.2l0.8,1.8h-1.4l-0.5-0.3l-1,0.3l0.3,0.8l-2.9,1.6
                  l-0.4,1l-0.2-0.2h-0.9l-0.6,1.3l1.5,1.5l-0.2,3l0.3,0.4l-0.6,0.4l-1-0.3l-0.2,0.1l-0.4,0.5l-0.4,0.1v0.4l-2.2,1.2l0.6,0.9l1.1,0.4
                  h-0.7l-0.5,0.5l1.2,2l-2.6,1.2l-2.9-1.1l-0.4,0.7l-2.3-1l-0.1-0.8L126,411v-0.8l-1,1.2l-0.1,0.9l-1.9,1.5l-1-0.5l-0.3,0.6l-2-0.4
                  l-1.8,1.5l-4.3-1.1l0.6,2.8l0.4,0.3h0.5l-0.5,0.3l0.4,0.3l-0.2,0.2l0.2,0.2l0.1,1.7l1.6,0.2l-1.3,0.1v0.2l-0.1,0.1l0.3,0.4v0.4
@@ -621,33 +847,33 @@
                  z M157.2,452.3h-3.5l-0.2,0.3l0.3,0.2l-0.5,0.4l0.2,0.4l6.4-0.7L157.2,452.3L157.2,452.3L157.2,452.3L157.2,452.3z M162.3,454.6
                  l-0.5,0.5l4.9,0.7l-0.1-0.3L162.3,454.6L162.3,454.6L162.3,454.6z M167.8,454.9l0.4,0.5l0.6,0.1l-0.6-0.5L167.8,454.9L167.8,454.9
                  L167.8,454.9z M156.1,455.5l-0.5,0.3l0.5,0.6l1-0.7L156.1,455.5L156.1,455.5L156.1,455.5z"/>
-                 <path id="cz-1" inkscape:connector-curvature="0" class="st2" style="animation-delay: 15s;" d="M117.3,322.6l1.5,1.5l-5.1,2.3l-0.2,0.9l-3.1,0.4l-1,2l-0.9-0.5
+                 <path id="czechy" inkscape:connector-curvature="0" class="st2" style="animation-delay: 16s;" d="M117.3,322.6l1.5,1.5l-5.1,2.3l-0.2,0.9l-3.1,0.4l-1,2l-0.9-0.5
                  l-2,2.3l-1.5,0.1l-0.4,1.4l-2.2-0.5l-4.6,4.9l-2-2.6v0.8l-0.3,0.2l1.2,1.4v0.8l3.6,3.4l-1.5,2.5l4.3,6.2l-0.2,0.6l17.9,11.7l0.9-1.1
                  l2.6,0.9l1-3.3l1.6,0.1l0.1-4.1l1.6,0.1l0.2,0.9l1.7-0.8l11.5,3.3l1.6-1.6l2.7,1.5l1.2-0.5l0.9,1.5l9.7-5.9l0.1-1.4l1.6-0.8l1-4
                  l6.2-4.6l-0.6-2.4l-2-0.5l-1.4-3.3l-5-1.3l-0.5-0.5l-1.6,1.5l-0.9-0.4l-0.6-1.4l-1.7-0.9l1.1-2.6h-0.4l-0.2,0.9l-8.3-1.9l1.9,3.1
                  l-2.2,1l-0.7,1.5l-5.9-4.8l1.1-3.9l-3.4,1.1l-0.4-1.4l-1.4,0.4l-0.6-1.4l-5.2-1.5l-1.7-2.3l-3.6,3.5l-1.5-1l-0.2-0.8l-0.4,0.2
                  l-0.1-0.7l-1.5-1l-0.5,0.2l-0.8-0.6L117.3,322.6L117.3,322.6L117.3,322.6L117.3,322.6z"/>
-                 <path id="sk-2" inkscape:connector-curvature="0" class="st2" style="animation-delay: 14s;" d="M194.8,339.7l-1.7,0.3l-0.7,0.9l-1.6,0.3l0.6,0.5l-1.7,1.4
+                 <path id="slowacja" inkscape:connector-curvature="0" class="st2" style="animation-delay: 15s;" d="M194.8,339.7l-1.7,0.3l-0.7,0.9l-1.6,0.3l0.6,0.5l-1.7,1.4
                  l-2.6-1.5l-1.2,0.8l-1.5-0.4l-3.4,4.4l-1.5-0.6l-1.7,0.5l-0.1-3l-1.7,0.3l0.1-0.9l-0.7,0.1l-1.4-2.3l-4.9,3.9l-0.1-1.6l-1.5-0.1
                  l-6.2,4.6l-1,4l-1.6,0.8l-0.1,1.4l-9.6,5.9l-1,4.6l3.9,5.1l1.1-0.1l6.4,4l11.6-2.5l-0.6-3.5l7-1.8l0.2-2.3l4.2,0.9l2.2-2.6l1.8,0.1
                  l1.6-5l10-2.4l3.6,3.3l4.2-1.5l0.1-0.1h-0.1l-0.6-3l3.1-8.6l-5.8-1.5l-0.7-1.5L194.8,339.7L194.8,339.7L194.8,339.7L194.8,339.7z"/>
-                 <path id="hu-3" inkscape:connector-curvature="0" class="st2" style="animation-delay: 13s;" d="M197.1,353.8l-10,2.4l-1.6,5l-1.8-0.1l-2.2,2.6l-4.2-0.9l-0.2,2.3
+                 <path id="wegry" inkscape:connector-curvature="0" class="st2" style="animation-delay: 14s;" d="M197.1,353.8l-10,2.4l-1.6,5l-1.8-0.1l-2.2,2.6l-4.2-0.9l-0.2,2.3
                  l-7,1.8l0.6,3.5l-11.6,2.5l-6.4-4l-1.2,0.1l-0.7,3.1l0.7,1.3l-0.6,1.4l-4.2-0.5l-1.6,0.9v1.3l2.3,0.6l-0.5,2.6L145,380v4.1l1,0.3
                  l-0.3,1.7l-3.9,3l1.8-0.2l3.8,6.1l0,0l0.7,0.2l0.7,1l0.2-0.2l0.1,0.3h0.6l0.1,0.1h0.3l0.7,1.5l0.8,0.6h0.2v0.3l2.2,0.9l1.4,2.3
                  l1,0.3l-0.3,0.5l0.7-0.5l0.2,0.5l-0.3,0.1h2.2l3.8,2.5l6.1-0.3l1-1l0.2,0.1l1.5-2.3l0.5-0.1l1.3,0.5v-0.6l0.6-0.2v-0.1l2-1.3l0.3-1
                  l1.4,0.6l4-3.6h7.5l-0.1-0.3l5.7-1.6l0.8-1.7l2.5,0.5l1-0.8l1.2-5.9l1.1-0.8l2-6.2l-0.1-0.2l-0.5-0.2l-0.1-0.2l2.1-5.6l0.8-0.2
                  l2.6-6.9l3.2-0.9l2.5-3.5l-1.1-2.1l-1-0.4l-1.4,0.6l-1.6-2.1l-1.4,0.3l-2.9-2.2l-4.2,1.6L197.1,353.8L197.1,353.8L197.1,353.8z"/>
-                 <path id="lt-3" inkscape:connector-curvature="0" class="st2" style="animation-delay: 12s;" d="M206.9,219.5l-2.2,3.3l-2.1-0.1l-1.5,1.1l-8.8,0.1l-0.6,1.3
+                 <path id="litwa" inkscape:connector-curvature="0" class="st2" style="animation-delay: 13s;" d="M206.9,219.5l-2.2,3.3l-2.1-0.1l-1.5,1.1l-8.8,0.1l-0.6,1.3
                  l-1.9-1.6l-1.4,1.1l-5.8,0.3l-6.5,4.1l-0.9,2.6l-1.4,0.3l3.1,12.1l0.5-0.6l0.6,1.8l0.9-0.6l0.7,1l5.6,1.3l0.1,0.5l5.4-1.1l0.7,1.5
                  l0.7-0.1l1.4,1.1l0.9,8.4l0.6-0.9l6.6,3.5l0.7,2.9l6.1-1.5l2.6,0.9l1.6-2.3l2-0.1l-0.6-2.1l2.7-0.9l0.6-2.4l3.5-0.3l-0.5,1l2.6-0.4
                  l-2.7-2.5l1.1-4.1l-1.1-3.5l3.7-6.8l3.2-0.5v-1.8l1-0.8l-3.5-0.6l0.2-5.5l-1.1,0.1l-9-5.8l-4.9,0.5L206.9,219.5L206.9,219.5
                  L206.9,219.5L206.9,219.5z M175.9,238.5l-0.7,5.8l0.6,0.4l0.8-5.3l-0.6-1L175.9,238.5L175.9,238.5z"/>
-                 <path id="lv-1" inkscape:connector-curvature="0" class="st2" style="animation-delay: 11s;" d="M173.9,232l1.4-0.3l0.9-2.6l6.5-4.1l5.7-0.3l1.4-1.1l1.9,1.6
+                 <path id="lotwa" inkscape:connector-curvature="0" class="st2" style="animation-delay: 12s;" d="M173.9,232l1.4-0.3l0.9-2.6l6.5-4.1l5.7-0.3l1.4-1.1l1.9,1.6
                  l0.6-1.3l8.9-0.1l1.5-1.1l2.1,0.1l2.2-3.3l3.4,3.8l4.9-0.5l9,5.8l5.1-4.1l1.5,0.8l0.4-1h2.4l0.9-4.1l2.6-2.8l-5.6-10.8l-1.7,0.8
                  l0.2-3.8l-1-0.6l-1.1-4.1l-1.6-0.5l-0.2-1.6l-6-0.3l-2.5,2.6l-5.4-3.3l-0.1-1.1L210,195l-0.6-1l-1.1,0.6l-3.2-2.1l0.1,0.9l-1.7-0.3
                  l-6,4.8l-0.2-0.1l3.1,10.2l-5.2,5.7l-4.1-1.5l-2-4l-5-2.8l-0.7-2.6l-7.1,4.4l-3.6,17.8l0.2,0.3l0,0L173.9,232L173.9,232L173.9,232
                  L173.9,232z"/>
-                 <path id="ro-1" inkscape:connector-curvature="0" class="st2" style="animation-delay: 10s;" d="M254.5,347.4l-1.2,0.4l-0.2-0.2l-0.2,0.7l-2.4,1.3l-1.2,3.6
+                 <path id="rumunia" inkscape:connector-curvature="0" class="st2" style="animation-delay: 11s;" d="M254.5,347.4l-1.2,0.4l-0.2-0.2l-0.2,0.7l-2.4,1.3l-1.2,3.6
                  l-12.5,7.7l-5.3-3l-2.5,1.5l-7.7-0.3l-1,0.8l-3.5-1.5l-4.9,6.8l-3.2,0.9l-2.5,6.8l-0.9,0.4l-2.1,5.6l0.6,0.5l-2,6.2l-1.1,0.8
                  l-2.2,6.8l-2.5-0.5l-0.6,1.5l-5.9,1.8l1.5,2.2l1.2,0.3l0.6,1l0.6-0.1l2,2.1l0.8-0.5l0.2,0.1l0.8,3.7l-0.4,1l4.2,2.5l0.7-0.5l1,1
                  l3.2,0.8l-1.1,2.7l0.7,0.8l1.6,0.5l-1.9,2.1l3.3,0.8l0.5,1.3l4.1-0.2l2.2,2.3l2.2-3.8l4.6,1l0.4,0.4v0.2l-0.1,0.2l-2,0.4l-0.5,1
@@ -659,14 +885,14 @@
                  l0.5,0.8l-1.8,4.2l-0.2-0.3v-1.1l0.2-0.3l-0.1-0.5l1.3-1.6l0.3,0.1v-0.4h-1l0.3,0.2l-0.7,0.9l-0.6,0.1V399l-0.2-0.3l1.4-1.3
                  l-0.2-0.4l0.1-0.5l-1.3-1.3l0.1-1L292.2,393.2L292.2,393.2L292.2,393.2z M291.3,398.6l-0.2,0.1l-0.3,0.7L291.3,398.6L291.3,398.6
                  L291.3,398.6z"/>
-                 <path id="bg-3" inkscape:connector-curvature="0" class="st2" style="animation-delay: 9s;" d="M274.9,412.3l-2.7,0.3l-15,12.5l-12.8,0.8l-1.7,1.5l-16.9,1.3
+                 <path id="bulgaria" inkscape:connector-curvature="0" class="st2" style="animation-delay: 10s;" d="M274.9,412.3l-2.7,0.3l-15,12.5l-12.8,0.8l-1.7,1.5l-16.9,1.3
                  l-0.1-2.8l1-1.5l-4.6-1.5l-0.5,2.3l-2.2,1.5l0.1,3.6l9.1,8.5l-2.4,5.6l-3,1.6l0.7,1.1l-0.1,3h0.3l1.2,1.3l-0.9,2.6l-0.9,0.5l7.1,4.2
                  l1.9,3.6l0,0v0.1l0,0l0.1,6.1l2.9-0.5l0.7-1.2l8.7-2.5l0.8-1.7l1.1,0.1l1.2-0.8l1.5,0.1l1.6-0.8l1.2,1.8l1.5,0.1l1.1,0.8l0.3-0.8
                  l5.2,0.9l0.5,0.5l2.9-1.1l0.5-0.6l3.1-1l0.9,0.3l2.5-1.4v-6.4h1.6l2.5-2.6l0.5-2.6l2.6-0.4l2.1-2.4l6.6,1.4l0.1-0.5l5.1-2.1
                  l-4.4-3.5l0.2-0.9l-4.6-1.9l2.1-1.8l-0.4-1l1-1.1l-0.4-0.4l2.1-0.6l-1.1-7.7l-0.7-0.4l1.2-0.9l0.2-2.6l0.3-0.4l3.7-0.7l1.3-1.8
                  l-0.9-4.4l-7.2-0.1l-1.4-2.4l-0.8,0.9l-1.4,0.5l-1.3-1.3v0.3l-2.2,0.7l-1.8-0.5L274.9,412.3L274.9,412.3L274.9,412.3L274.9,412.3z"
                  />
-                 <path id="ee-8" inkscape:connector-curvature="0" class="st2" style="animation-delay: 8s;" d="M221.6,164.4l-1.2,1.5l-16,0.1l-1,1.4L202,166l0.1,1.6l-0.2,0.3
+                 <path id="estonia" inkscape:connector-curvature="0" class="st2" style="animation-delay: 9s;" d="M221.6,164.4l-1.2,1.5l-16,0.1l-1,1.4L202,166l0.1,1.6l-0.2,0.3
                  l-0.7-0.5l0.1,1.1l0.1,0.1l-1.7,1.1l-1.3-0.1l-0.2,0.5h-2l-1.2-0.9l0.6,2.3l-5.6,2.4l0.2,1.4l-4.8,2.8l0.6,3.3l1.2,0.2l-0.7,2.1
                  l2.2,1.3l-0.8,1.9l6.1,5.3l1.1-2.1l2.2-0.6l0.3,0.4l-0.9,7.7l0.2,0.1l6-4.8l1.7,0.3l-0.1-0.9l3.2,2.1l1.1-0.6l0.6,1l2.2-0.3l0.1,1.1
                  l5.4,3.3l2.5-2.6l4.4,0.7l-0.2-2.8l1-0.6l-0.4-1.6l0.5-0.3l1,0.1l0.2-0.5l-0.2-0.7l-1.3-0.5l-0.2-0.9h-0.6l-5.2-12.2l1.7-3.1h0.1
@@ -676,16 +902,16 @@
                  l1.5-0.8l0.2-3.5l1.8-1.2h1.8l4.5-4.9L182.4,188.3L182.4,188.3L182.4,188.3z M174.8,193.8v0.3V193.8L174.8,193.8z M193.7,193.9
                  l-0.2,1L193.7,193.9L193.7,193.9z M180.7,196.2l0.2,0.3L180.7,196.2L180.7,196.2z M187.8,200.6l-0.2,0.3l0.5,0.3L187.8,200.6
                  L187.8,200.6z"/>
-                 <path id="si-9" inkscape:connector-curvature="0" class="st2" style="animation-delay: 7s;" d="M143.7,389l-3.3,2.5l0.5,1.2l-4.1-0.5l-1.8,1.7l-1.4-0.5l-5.6,1.1
+                 <path id="slowenia" inkscape:connector-curvature="0" class="st2" style="animation-delay: 8s;" d="M143.7,389l-3.3,2.5l0.5,1.2l-4.1-0.5l-1.8,1.7l-1.4-0.5l-5.6,1.1
                  l-1,1.9l-2.1,1.3l-0.4,1.1l-9.6-2.1l-3.6,4.4l2.9,1.5l-1.4,2.7l1.7,0.5l-0.6,2.6l2.2,3.7l-0.8,0.3v0.6l-1.5,0.5l0.3,0.8l3.2,0.7
                  l1.8-1.5l2,0.4l0.3-0.6l1,0.5l1.9-1.5l0.1-0.9l1-1.2v0.8l0.9,0.6l0.1,0.8l2.3,1l0.4-0.7l2.9,1.1l2.6-1.1l-1.2-2.1l0.5-0.5h0.7
                  l-1-0.4l-0.6-0.9l2.2-1.2v-0.4l0.4-0.1l0.4-0.5l0.2-0.1l1,0.3l0.6-0.4l-0.3-0.4l0.2-3l-1.5-1.5l0.6-1.3h0.9l0.2,0.2l0.4-1l2.9-1.6
                  l-0.3-0.8l1-0.3l0.5,0.3h1.4l-0.8-1.8l1.5-1.2l2.3,1.1h0.2l0,0L143.7,389L143.7,389L143.7,389L143.7,389z"/>
-                 <path id="mt-0" inkscape:connector-curvature="0" class="st2" style="animation-delay: 6s;" d="M130.6,569l-0.6,0.4l0.2,0.3l-0.1,0.3l0.2,0.3l-0.2,0.1l0.1,0.5
+                 <path id="malta" inkscape:connector-curvature="0" class="st2" style="animation-delay: 7s;" d="M130.6,569l-0.6,0.4l0.2,0.3l-0.1,0.3l0.2,0.3l-0.2,0.1l0.1,0.5
                  l2,1.2h0.7l-0.1-0.3h0.3l0.1,0.1l0.1-0.3v-0.1l0.1-0.3l-0.7-0.5v0.2l-0.3,0.1l0.2-0.3h-0.2l0.1-0.2l-0.9-0.8l-0.2,0.1v-0.1h-0.1
                  l-0.5,0.2l0.2-0.3l-0.6-0.2l0.2-0.2V569L130.6,569L130.6,569L130.6,569z M130.2,568.9l0.2-0.2l-0.3-0.1v0.2L130.2,568.9L130.2,568.9
                  L130.2,568.9z M130.2,568.4l-0.9,0.3l-0.9-0.3l-0.2-0.4l0.2-0.3l1.5,0.4L130.2,568.4L130.2,568.4L130.2,568.4L130.2,568.4z"/>
-                 <path id="cy-6" inkscape:connector-curvature="0" class="st2" style="animation-delay: 5s;" d="M398.8,520.7l-6.7,9.2l3.9,4.1l-1.9,0.1l-1.1,1.1l-2.6,0.6
+                 <path id="cypr" inkscape:connector-curvature="0" class="st2" style="animation-delay: 6s;" d="M398.8,520.7l-6.7,9.2l3.9,4.1l-1.9,0.1l-1.1,1.1l-2.6,0.6
                  l-0.2,2.4l-6.4,4.4v2l-2.4-1l-2,1.3l-4.6-0.5l-3-5l1.6,0.6l1.6-2.8l4.1-1.1l0.4-2.1l-0.7-2L398.8,520.7L398.8,520.7L398.8,520.7
                  L398.8,520.7z"/>
 
@@ -709,7 +935,7 @@
                 <svg version="1.1" id="Warstwa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 600;" xml:space="preserve">
 
-   <polyline id="XMLID_7_" class="wskaznik slowacja" points="404,401.5 494,401.5 618,207.1 893.5,215 	"/>
+   <polyline id="XMLID_7_" class="wskaznik slowacja" points="398,401.5 488,401.5 606.8,225.4 849,225.7  	"/>
    	<polyline id="XMLID_1_" class="wskaznik rumunia" points="404,528.5 494,528.5 693.5,345.8 	"/>
    	<polyline id="XMLID_8_" class="wskaznik portugalia" points="404,655.5 494,655.5 644.5,540.5 	"/>
    	<line id="XMLID_10_" class="wskaznik polska" x1="404" y1="781.5" x2="776" y2="781.5"/>
@@ -723,7 +949,7 @@
    	<polyline id="XMLID_16_" class="wskaznik lotwa" points="1522,673.5 1394,673.5 1209.5,708.8 	"/>
    	<polyline id="XMLID_18_" class="wskaznik litwa" points="1519,729.5 1390.9,729.5 1150.8,767.9 	"/>
    	<polyline id="XMLID_19_" class="wskaznik malta" points="1522,785.5 1394,785.5 1110.5,788.5 	"/>
-   	<polyline id="XMLID_4_" class="wskaznik slowenia" points="404,276 494,275.2 612,176 947.8,204 	"/>
+   	<polyline id="XMLID_4_" class="wskaznik slowenia" points="404,276 494,275.2 612.3,204 940.4,204  	"/>
 
 </svg>
 
@@ -744,22 +970,22 @@
           <svg class="circle-chart" viewbox="0 0 33.83098862 33.83098862" width="500" height="500" xmlns="http://www.w3.org/2000/svg">
             <circle class="circle-chart__background" stroke="#efefef" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
 
-            <circle class="circle-chart slowenia" stroke="#3C2F8C" stroke-width="2" stroke-dasharray="100,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-            <circle class="circle-chart slowacja" stroke="#DBE238" stroke-width="2" stroke-dasharray="98.62,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-            <circle class="circle-chart rumunia" stroke="#4C2F8F" stroke-width="2" stroke-dasharray="94.43,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-            <circle class="circle-chart portugalia" stroke="#99CA3C" stroke-width="2" stroke-dasharray="75.83,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-            <circle class="circle-chart polska" stroke="#692A7C" stroke-width="2" stroke-dasharray="71.9,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-            <circle class="circle-chart malta" stroke="#43B749" stroke-width="2" stroke-dasharray="42.21,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-            <circle class="circle-chart litwa" stroke="#8C1B53" stroke-width="2" stroke-dasharray="41.78,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-            <circle class="circle-chart lotwa" stroke="#2EB672" stroke-width="2" stroke-dasharray="37.43,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-            <circle class="circle-chart wegry" stroke="#AF1F27" stroke-width="2" stroke-dasharray="33.65,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-            <circle class="circle-chart grecja" stroke="#32C0C3" stroke-width="2" stroke-dasharray="25.71,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-            <circle class="circle-chart estonia" stroke="#CC2127" stroke-width="2" stroke-dasharray="21.39,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-            <circle class="circle-chart czechy" stroke="#3CAFE4" stroke-width="2" stroke-dasharray="18.61,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-            <circle class="circle-chart cypr" stroke="#E43025" stroke-width="2" stroke-dasharray="12.3,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-            <circle class="circle-chart chorwacja" stroke="#3463AF" stroke-width="2" stroke-dasharray="11.61,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-            <circle class="circle-chart bulgaria" stroke="#EF6023" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7.78,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
-
+            <circle class="circle-chart slowenia" stroke="#EF6023" stroke-width="2" stroke-dasharray="100,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <circle class="circle-chart slowacja" stroke="#3C2F8C" stroke-width="2" stroke-dasharray="98.62,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <circle class="circle-chart rumunia" stroke="#DBE238" stroke-width="2" stroke-dasharray="94.43,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <circle class="circle-chart portugalia" stroke="#4C2F8F" stroke-width="2" stroke-dasharray="75.83,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <circle class="circle-chart polska" stroke="#99CA3C" stroke-width="2" stroke-dasharray="71.9,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <circle class="circle-chart malta" stroke="#692A7C" stroke-width="2" stroke-dasharray="42.21,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <circle class="circle-chart litwa" stroke="#43B749" stroke-width="2" stroke-dasharray="41.78,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <circle class="circle-chart lotwa" stroke="#8C1B53" stroke-width="2" stroke-dasharray="37.43,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <circle class="circle-chart wegry" stroke="#2EB672" stroke-width="2" stroke-dasharray="33.65,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <circle class="circle-chart grecja" stroke="#AF1F27" stroke-width="2" stroke-dasharray="25.71,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <circle class="circle-chart estonia" stroke="#32C0C3" stroke-width="2" stroke-dasharray="21.39,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <circle class="circle-chart czechy" stroke="#CC2127" stroke-width="2" stroke-dasharray="18.61,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <circle class="circle-chart cypr" stroke="#3CAFE4" stroke-width="2" stroke-dasharray="12.3,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <circle class="circle-chart chorwacja" stroke="#E43025" stroke-width="2" stroke-dasharray="11.61,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+            <circle class="circle-chart bulgaria" stroke="#3463AF" stroke-width="2" stroke-linecap="butt" stroke-dasharray="7.78,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431" />
+#EF6023
             <h3 class="tekst_w_kole" x="16.91" y="16.91" alignment-baseline="central" text-anchor="middle">Łącznie: <a class="suma2"></a> mld. &#128;</h>
 
 </div>
@@ -790,9 +1016,8 @@
 
 <footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script>
-                new WOW().init();
-                </script>
+
+
+
 </footer>
 </html>
